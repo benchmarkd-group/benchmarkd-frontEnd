@@ -1,0 +1,48 @@
+.btn-circle.btn-xl {
+    width: 70px;
+    height: 70px;
+    padding: 10px 16px;
+    border-radius: 35px;
+    font-size: 24px;
+    line-height: 1.33;
+}
+
+.btn-circle {
+    width: 30px;
+    height: 30px;
+    padding: 6px 0px;
+    border-radius: 15px;
+    text-align: center;
+    font-size: 12px;
+    line-height: 1.42857;
+}
+
+.panel-body {
+    float : right;
+}
+
+.card-title {
+    display:inline-block;margin-right:10px;
+
+} 
+
+.price {
+    display:inline-block;
+
+}
+.ratingCount{
+    float:left;
+    display:inline-block;
+}
+
+.avgRating{
+    float: right;
+    display:inline-block;
+}
+.noOfReviews{
+    float: right;
+   
+}
+h3{
+    float:left;
+}
