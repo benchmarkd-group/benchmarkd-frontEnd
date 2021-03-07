@@ -1,0 +1,69 @@
+.btn-circle.btn-xl {
+    width: 70px;
+    height: 70px;
+    padding: 2px 2px;
+    border-radius: 35px;
+    font-size: 24px;
+    line-height: 1.33;
+}
+
+.content {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 500px;
+    column-gap: 2px;
+    top: -30%;
+    right: -25%;
+    width: 45%;
+    height: 100%;
+    margin: 0 auto;
+    padding: 0px 0;
+}
+
+.course-card {
+    width: 18rem;
+    height: 18rem;
+}
+
+
+.btn-circle {
+    width: 25px;
+    height: 25px;
+    padding: 0px 0px;
+    border-radius: 20px;
+    text-align: center;
+    font-size: 12px;
+    line-height: 1.42857;
+}
+
+.panel-body {
+    float : right;
+}
+
+.card-title {
+    display:inline-block;margin-right:10px;
+
+} 
+
+.price {
+    display:inline-block;
+
+}
+.ratingCount{
+    float:left;
+    display:inline-block;
+}
+
+.avgRating{
+    float: right;
+    display:inline-block;
+}
+.noOfReviews{
+    float: right;
+   
+}
+h3{
+    float:left;
+}
