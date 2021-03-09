@@ -5,9 +5,10 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import Card from './components/Course_Cards/Cards';
 import Scroll from './components/ScrollComponent/ScrollComponent';
+import HorizontalScroll from './components/HorizontalScroll/HorizontalScroll'
 
 ReactDOM.render(
-  <Scroll/>,
+  <HorizontalScroll/>,
   document.getElementById('root')
 );
 
