@@ -1,10 +1,8 @@
 import React, { Component } from 'react';
-import ScrollMenu from 'react-horizontal-scrolling-menu';
 import '../HorizontalScroll/HorizontalScroll.css';
 import response from '../../jsons/searchpage.json';
 import CMATimg from '../../../src/images/cmat_img.png';
 import "bootstrap/dist/css/bootstrap.css";
-import { Carousel } from 'react-responsive-carousel';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import InfiniteCarousel from 'react-leaf-carousel';
 import '../Course_Cards/Cards.css';
