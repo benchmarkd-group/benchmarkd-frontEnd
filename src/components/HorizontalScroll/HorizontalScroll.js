@@ -2,77 +2,97 @@ import React, { Component } from 'react';
 import ScrollMenu from 'react-horizontal-scrolling-menu';
 import '../HorizontalScroll/HorizontalScroll.css';
 import response from '../../jsons/searchpage.json';
-// list of items
-var i;
-const list = [];
-for(var i=0; i< response.institutes.length; i++ ){
-    list.push({'name' : response.institutes[i].institute_name});
-}
-// One item component
-// selected prop will be passed
-const MenuItem = ({text, selected}) => {
-  return <div
-    className={`menu-item ${selected ? 'active' : ''}`}
-    >{text}</div>;
-};
+import CMATimg from '../../../src/images/cmat_img.png';
+import "bootstrap/dist/css/bootstrap.css";
+import { Carousel } from 'react-responsive-carousel';
+import "react-responsive-carousel/lib/styles/carousel.min.css";
+import InfiniteCarousel from 'react-leaf-carousel';
+import '../Course_Cards/Cards.css';
+import { faHome, faCamera, faAddressCard, faBook, faLocationArrow } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import Card from 'react-bootstrap/Card';
 
-// All items component
-// Important! add unique key
-export const Menu = (list, selected) =>
-  list.map(el => {
-    const {name} = el;
-
-    return <MenuItem text={name} key={name} selected={selected} />;
-  });
-
-
-const Arrow = ({ text, className }) => {
-  return (
-    <div
-      className={className}
-    >{text}</div>
-  );
-};
-
-
-const ArrowLeft = Arrow({ text: '<', className: 'arrow-prev' });
-const ArrowRight = Arrow({ text: '>', className: 'arrow-next' });
-
-
-const selected = 'name';
 
 class HorizontalScroll extends Component {
-  constructor(props) {
-    super(props);
-    // call it again if items count changes
-    this.menuItems = Menu(list, selected);
-  }
-
-  state = {
-    selected
-  };
-
-  onSelect = key => {
-    this.setState({ selected: key });
-  }
-
+  
 
   render() {
-    const { selected } = this.state;
-    // Create menu from items
-    const menu = this.menuItems;
+    let itemList=[];
+  
+    return (<div>
+        <div style={{ height: '10%' }}>
+                 </div>
+                 {response.institutes.forEach((institute)=>{
+      itemList.push( 
 
-    return (
-      <div className="App">
-        <ScrollMenu
-          data={menu}
-          arrowLeft={ArrowLeft}
-          arrowRight={ArrowRight}
-          selected={selected}
-          onSelect={this.onSelect}
-        />
+  <div id="carouselitem">
+    <Card bg="info" style={{ width: '20vw' }} class='course-card'>
+
+<div style={{ height: '10%' }}>
+   <Card.Img variant="top" src={CMATimg} class='course-card-img' />
+</div>
+   
+   
+   
+   <div class="content">
+       <button type="button" class="btn btn-primary btn-circle"><FontAwesomeIcon icon={faHome} />
+                       </button> 
+       <button type="button" class="btn btn-primary btn-circle"><FontAwesomeIcon icon={faCamera} />
+                       </button> 
+       <button type="button" class="btn btn-primary btn-circle"><FontAwesomeIcon icon={faAddressCard} />
+                       </button> 
+       <button type="button" class="btn btn-primary btn-circle"><FontAwesomeIcon icon={faLocationArrow} />
+                       </button> 
+       <button type="button" class="btn btn-primary btn-circle"><FontAwesomeIcon icon={faBook} />
+                       </button> 
+   </div>
+   <Card.Body>
+       <Card.Title>{institute.institute_name}</Card.Title>
+       <Card.Text>
+       {institute.institute_description}
+       </Card.Text>
+       
+       {/* <Button variant="primary">Go somewhere</Button> */}
+   </Card.Body>
+</Card>
+    </div>
+)})}
+
+      <InfiniteCarousel class= 'infinitecarousel'
+    breakpoints={[
+      {
+        breakpoint: 500,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+        },
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+        },
+      },
+    ]}
+    dots={true}
+    showSides={true}
+    sidesOpacity={.5}
+    sideSize={.1}
+    slidesToScroll={4}
+    slidesToShow={4}
+    scrollOnDevice={true}
+    incrementalSides={true}
+  >
+
+  {itemList}
+
+  </InfiniteCarousel>
+
       </div>
     );
   }
 }
 export default HorizontalScroll;
+
+

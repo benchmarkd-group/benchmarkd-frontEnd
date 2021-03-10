@@ -74,7 +74,95 @@
             ],
             "institute_email_id": "1234@mail.com",
             "institute_name": "Prep for CAT1",
-            "institute_description": "Time institute",
+            "institute_description": "Time instituteTime instituteTime instituteTime instituteTime instituteTime instituteTime instituteTime instituteTime instituteTime instituteTime instituteTime institute ",
+            "institute_location": [
+                {
+                    "center_location": "google_maps_url_mumbai",
+                    "center_name": "Mumbai",
+                    "center_contact_number": "22334455"
+                },
+                {
+                    "center_location": "google_maps_url_vashi",
+                    "center_name": "Vashi",
+                    "center_contact_number": "34565432"
+                }
+            ]
+        },
+        {
+            "institute_courses": [
+                "CAT course",
+                "CET Course",
+                "GRE Course"
+            ],
+            "institute_email_id": "1234@mail.com",
+            "institute_name": "Prep for CAT1",
+            "institute_description": "Time instituteTime instituteTime instituteTime instituteTime instituteTime instituteTime instituteTime instituteTime instituteTime instituteTime instituteTime institute ",
+            "institute_location": [
+                {
+                    "center_location": "google_maps_url_mumbai",
+                    "center_name": "Mumbai",
+                    "center_contact_number": "22334455"
+                },
+                {
+                    "center_location": "google_maps_url_vashi",
+                    "center_name": "Vashi",
+                    "center_contact_number": "34565432"
+                }
+            ]
+        },
+        {
+            "institute_courses": [
+                "CAT course",
+                "CET Course",
+                "GRE Course"
+            ],
+            "institute_email_id": "1234@mail.com",
+            "institute_name": "Prep for CAT1",
+            "institute_description": "Time instituteTime instituteTime instituteTime instituteTime instituteTime instituteTime instituteTime instituteTime instituteTime instituteTime instituteTime institute ",
+            "institute_location": [
+                {
+                    "center_location": "google_maps_url_mumbai",
+                    "center_name": "Mumbai",
+                    "center_contact_number": "22334455"
+                },
+                {
+                    "center_location": "google_maps_url_vashi",
+                    "center_name": "Vashi",
+                    "center_contact_number": "34565432"
+                }
+            ]
+        },
+        {
+            "institute_courses": [
+                "CAT course",
+                "CET Course",
+                "GRE Course"
+            ],
+            "institute_email_id": "1234@mail.com",
+            "institute_name": "Prep for CAT1",
+            "institute_description": "Time instituteTime instituteTime instituteTime instituteTime instituteTime instituteTime instituteTime instituteTime instituteTime instituteTime instituteTime institute ",
+            "institute_location": [
+                {
+                    "center_location": "google_maps_url_mumbai",
+                    "center_name": "Mumbai",
+                    "center_contact_number": "22334455"
+                },
+                {
+                    "center_location": "google_maps_url_vashi",
+                    "center_name": "Vashi",
+                    "center_contact_number": "34565432"
+                }
+            ]
+        },
+        {
+            "institute_courses": [
+                "CAT course",
+                "CET Course",
+                "GRE Course"
+            ],
+            "institute_email_id": "1234@mail.com",
+            "institute_name": "Prep for CAT1",
+            "institute_description": "Time instituteTime instituteTime instituteTime instituteTime instituteTime instituteTime instituteTime instituteTime instituteTime instituteTime instituteTime institute ",
             "institute_location": [
                 {
                     "center_location": "google_maps_url_mumbai",
@@ -96,7 +184,7 @@
             ],
             "institute_email_id": "1234@mail.com",
             "institute_name": "Prep for CAT2",
-            "institute_description": "Time institute",
+            "institute_description": "Time instituteTime instituteTime instituteTime instituteTime instituteTime instituteTime instituteTime instituteTime instituteTime instituteTime instituteTime institute ",
             "institute_location": [
                 {
                     "center_location": "google_maps_url_mumbai",
@@ -118,7 +206,7 @@
             ],
             "institute_email_id": "1234@mail.com",
             "institute_name": "Prep for CAT3",
-            "institute_description": "Time institute",
+            "institute_description": "Time instituteTime instituteTime instituteTime instituteTime instituteTime instituteTime instituteTime instituteTime instituteTime instituteTime instituteTime institute ",
             "institute_location": [
                 {
                     "center_location": "google_maps_url_mumbai",
@@ -140,7 +228,7 @@
             ],
             "institute_email_id": "1234@mail.com",
             "institute_name": "Prep for CAT4",
-            "institute_description": "Time institute",
+            "institute_description": "Time instituteTime instituteTime instituteTime instituteTime instituteTime instituteTime instituteTime instituteTime instituteTime instituteTime instituteTime institute ",
             "institute_location": [
                 {
                     "center_location": "google_maps_url_mumbai",
@@ -162,7 +250,7 @@
             ],
             "institute_email_id": "1234@mail.com",
             "institute_name": "Prep for CAT5",
-            "institute_description": "Time institute",
+            "institute_description": "Time instituteTime instituteTime instituteTime instituteTime instituteTime instituteTime instituteTime instituteTime instituteTime instituteTime instituteTime institute ",
             "institute_location": [
                 {
                     "center_location": "google_maps_url_mumbai",
@@ -184,7 +272,7 @@
             ],
             "institute_email_id": "1234@mail.com",
             "institute_name": "Prep for CAT6",
-            "institute_description": "Time institute",
+            "institute_description": "Time instituteTime instituteTime instituteTime instituteTime instituteTime instituteTime instituteTime instituteTime instituteTime instituteTime instituteTime institute ",
             "institute_location": [
                 {
                     "center_location": "google_maps_url_mumbai",

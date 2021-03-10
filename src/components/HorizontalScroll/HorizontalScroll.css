@@ -3,7 +3,7 @@
   padding: 0 40px;
   margin: 5px 10px;
   user-select: none;
-  cursor: pointer;
+  /* cursor: pointer; */
   border: none;
 }
 .menu-item-wrapper.active {
@@ -15,5 +15,60 @@
 
 .scroll-menu-arrow {
   padding: 20px;
-  cursor: pointer;
+  /* cursor: pointer; */
+}
+
+.horizontalScroll {
+    background-color: violet;
+    height: 2000px;
+    width: 2000px;
+
+}
+
+.App {
+    font-family: sans-serif;
+    text-align: center;
+  }
+  .netslider {
+    margin: 20px auto;
+  }
+
+  .tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+  }
+  
+  .tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+  
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+  }
+  
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+  }
+
+  .btn-circle {
+    margin: 0.1vw !important;
+    width: 25px !important;
+    height: 25px !important;
+    padding: 0px 0px !important;
+    border-radius: 20px !important;
+    text-align: center !important;
+    font-size: 12px !important;
+    line-height: 1.42857 !important;
+}
+
+.infinitecarousel {
+    width: 250px !important;
+    height: 250x !important;
 }
