@@ -13,8 +13,14 @@ import CourseCardTitle from './components/Course_Cards/Card_Elements/courseCardT
 
 
 ReactDOM.render(
+<div>
+ 
   <HorizontalScroll/>,
+  <Card/>,
+ </div>,
   document.getElementById('root')
+ 
+
 );
 
 // If you want to start measuring performance in your app, pass a function
