@@ -13,7 +13,6 @@ class ScrollComponent extends Component {
     };
   }
 
-  
 
   getPhotos(page) {
     this.setState({ loading: true });

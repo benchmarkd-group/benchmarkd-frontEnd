@@ -1,0 +1,23 @@
+.ratings-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: fit-content;
+    width: fit-content;
+    align-self: center;
+}
+
+.ratings-number {
+    font-size: 0.8em;
+    margin-top: 0.4em;
+    margin-right: 0.4em;
+    color: #ffad62;
+    font-weight: 600;
+}
+
+.ratings-amount {
+    margin-top: 0.5em;
+    margin-left: 0.4em;
+    font-size: 0.68em;
+    color: gray;
+}
