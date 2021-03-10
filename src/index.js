@@ -5,9 +5,13 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import Card from './components/Course_Cards/Cards';
 import Scroll from './components/ScrollComponent/ScrollComponent';
+import CourseCard_Labels from './components/Course_Cards/Card_Elements/courseCardLabels/CourseCard_Labels';
+import CourseCard_Ratings from './components/Course_Cards/Card_Elements/courseCardRatings/CourseCard_Ratings';
+import CourseCardPricing from './components/Course_Cards/Card_Elements/courseCardPricing/courseCardPricing';
+import CourseCardTitle from './components/Course_Cards/Card_Elements/courseCardTitle/courseCardTitle'
 
 ReactDOM.render(
-  <Scroll/>,
+  <Card/>,
   document.getElementById('root')
 );
 

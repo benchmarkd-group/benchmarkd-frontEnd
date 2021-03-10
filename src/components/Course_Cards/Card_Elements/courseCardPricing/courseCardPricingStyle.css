@@ -1,0 +1,29 @@
+.pricing-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: fit-content;
+    height: fit-content;
+    align-self: center;
+    margin-left: 25%;
+}
+
+.discount-disabled {
+    display: none;
+}
+
+.discount-enabled {
+    font-size: 1rem;
+    color: black;
+}
+
+.normal-price {
+    color: black;
+}
+
+.discounted-price {
+    text-decoration: line-through;
+    font-size: 0.9rem;
+    color: gray;
+}

@@ -1,4 +1,4 @@
-.btn-circle.btn-xl {
+/* .btn-circle.btn-xl {
     width: 70px;
     height: 70px;
     padding: 2px 2px;
@@ -6,29 +6,53 @@
     font-size: 24px;
     line-height: 1.33;
 }
+ */
 
-.content {
-    position: relative;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    max-width: 500px;
-    column-gap: 2px;
-    top: -30%;
-    right: -25%;
-    width: 45%;
-    height: 100%;
-    margin: 0 auto;
-    padding: 0px 0;
-}
 
 .course-card {
-    width: 18rem;
-    height: 18rem;
+    width: 20vw;
+    height: fit-content;
+    border: double;
+    border-radius: 10px;
+    padding-top: 0rem;
 }
 
+.card-body {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    padding: 3%;
+    filter: blur(0px);
+}
 
-.btn-circle {
+.card-title-desc {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0%;
+}
+
+.card-image-container {
+}
+
+.card-image {
+    width: 100%;
+    height: 100%;
+}
+
+/* .course-card-labels-container {  
+    border: double;
+} */
+
+.price-component {
+
+}
+
+.rating-component {
+}
+
+/* .btn-circle {
     width: 25px;
     height: 25px;
     padding: 0px 0px;
@@ -36,34 +60,12 @@
     text-align: center;
     font-size: 12px;
     line-height: 1.42857;
+} */
+
+.rating-price-container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: fit-content;
 }
 
-.panel-body {
-    float : right;
-}
-
-.card-title {
-    display:inline-block;margin-right:10px;
-
-} 
-
-.price {
-    display:inline-block;
-
-}
-.ratingCount{
-    float:left;
-    display:inline-block;
-}
-
-.avgRating{
-    float: right;
-    display:inline-block;
-}
-.noOfReviews{
-    float: right;
-   
-}
-h3{
-    float:left;
-}
