@@ -1,0 +1,45 @@
+.title-container {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    height: fit-content;
+    justify-content: center;
+    margin: 0%;
+}
+
+.course-name {
+    font-size: 1.2vw;
+    font-weight: 900;
+    margin-bottom: 0%;
+}
+
+.institute-name {
+    font-size: 1vw;
+    font-weight: 700;
+    padding: 0.5%;
+}
+
+/* For Mobile */
+@media screen and (max-width: 800px) {
+    .course-name {
+        font-size: 10px;
+        font-weight: 900;
+    }
+    
+}
+
+@media screen and (max-width: 800px)
+ {
+    .institute-name {
+        font-size: 8px;
+        font-weight: 700;
+    }
+}
+
+/* For Tablets */
+@media screen and (min-width: 540px) and (max-width: 780px) {
+    .course-name {
+        font-size: 10px;
+        font-weight: 900;
+    }
+}
