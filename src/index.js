@@ -10,14 +10,16 @@ import CourseCard_Labels from './components/Course_Cards/Card_Elements/courseCar
 import CourseCard_Ratings from './components/Course_Cards/Card_Elements/courseCardRatings/CourseCard_Ratings';
 import CourseCardPricing from './components/Course_Cards/Card_Elements/courseCardPricing/courseCardPricing';
 import CourseCardTitle from './components/Course_Cards/Card_Elements/courseCardTitle/courseCardTitle'
-
+import ScrollComponent from './components/ScrollComponent/ScrollComponent';
 
 ReactDOM.render(
 
 <div>
  
+ {/* <HorizontalScroll/>,
+ <Card/>, */}
  <HorizontalScroll/>,
- <Card/>,
+ <ScrollComponent/>,
 </div>,
  document.getElementById('root')
 

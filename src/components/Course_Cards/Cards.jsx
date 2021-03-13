@@ -53,12 +53,13 @@ class Cards extends Component {
                 <div className='card-body'>
                     <div className='card-title-desc'>
                         <CourseCardTitle courseName='CMAT 2021 Crash Course' instituteName='T.I.M.E'></CourseCardTitle>
-                        <CourseCardDescription description='Hello there. This is the best course for CAT. We guarantee a 100%ile in the exam. If you dont get a 100%ile with us then something is wrong with you.'></CourseCardDescription>
-                    </div>
+                        <CourseCardDescription styles={{display:'inline-block'}} description='Hello there. This is the best course for CAT. We guarantee a 100%ile in the exam. If you dont get a 100%ile with us then something is wrong with you.'></CourseCardDescription>
+                        </div>
                     <div className='rating-price-container'>
                         <CourseCard_Ratings className='rating-component' rating='4.3' numberOfRatings='2541'/>
                         <CourseCardPrice className='price-component' discount='300' price='4500'></CourseCardPrice>
                     </div>
+                    
                 </div>
             </div>
         );
