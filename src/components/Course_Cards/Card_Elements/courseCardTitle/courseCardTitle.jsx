@@ -8,8 +8,8 @@ class CourseCard_Pricing extends Component {
 
         return (
             <div className='title-container'>
-                <h4 className='course-name'>CMAT 2021 Classroom Programme</h4>
-                <h7 className="institute-name">T.I.M.E</h7>
+                <h4 className='course-name'>{this.props.courseName}</h4>
+                <h7 className="institute-name">{this.props.instituteName}</h7>
             </div>
                        
         );

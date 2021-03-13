@@ -5,15 +5,12 @@
     flex-direction: row;
     width: fit-content;
     height: fit-content;
-    left: 45%;
-}
-
-.labels {
-    margin: 1vw;
+    left: 9em;
+    bottom: 4%;
 }
 
 .btn-circle {
-    margin: 0.1vw !important; 
+    margin: 0.1em !important; 
     width: 25px !important;
     height: 25px !important;
     padding: 0px 0px !important;
