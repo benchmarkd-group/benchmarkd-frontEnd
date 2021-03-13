@@ -9,7 +9,7 @@ import '../Course_Cards/Cards.css';
 import { faHome, faCamera, faAddressCard, faBook, faLocationArrow } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Card from 'react-bootstrap/Card';
-
+import CardInfo from '../Course_Cards/Cards'
 
 class HorizontalScroll extends Component {
   
@@ -22,39 +22,9 @@ class HorizontalScroll extends Component {
                  </div>
                  {response.institutes.forEach((institute)=>{
       itemList.push( 
-
-  <div id="carouselitem">
-    <Card bg="info" style={{ width: '20vw' }} class='course-card'>
-
-<div style={{ height: '10%' }}>
-   <Card.Img variant="top" src={CMATimg} class='course-card-img' />
-</div>
-   
-   
-   
-   <div class="content">
-       <button type="button" class="btn btn-primary btn-circle"><FontAwesomeIcon icon={faHome} />
-                       </button> 
-       <button type="button" class="btn btn-primary btn-circle"><FontAwesomeIcon icon={faCamera} />
-                       </button> 
-       <button type="button" class="btn btn-primary btn-circle"><FontAwesomeIcon icon={faAddressCard} />
-                       </button> 
-       <button type="button" class="btn btn-primary btn-circle"><FontAwesomeIcon icon={faLocationArrow} />
-                       </button> 
-       <button type="button" class="btn btn-primary btn-circle"><FontAwesomeIcon icon={faBook} />
-                       </button> 
-   </div>
-   <Card.Body>
-       <Card.Title>{institute.institute_name}</Card.Title>
-       <Card.Text>
-       {institute.institute_description}
-       </Card.Text>
        
-       {/* <Button variant="primary">Go somewhere</Button> */}
-   </Card.Body>
-</Card>
-    </div>
-)})}
+<CardInfo institute_info = {institute}/>
+ )})}
 
       <InfiniteCarousel class= 'infinitecarousel'
     breakpoints={[
