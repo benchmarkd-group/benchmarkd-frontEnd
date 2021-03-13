@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import CMATimg from '../../../src/images/cmat_img.png';
+import CMATimg from '../../../src/images/img.png';
 import response from '../../jsons/searchpage.json';
 import '../Course_Cards/Cards.css';
 import { faHome, faCamera, faAddressCard, faBook, faLocationArrow } from "@fortawesome/free-solid-svg-icons";
@@ -26,37 +26,41 @@ class Cards extends Component {
     }
     render(props) {
         return (
-            <div className='outer'>
-             <Card className='course-card'>
-
-                 <div className='card-image-container'>
-                    {/* <Card.Img variant="top" src={CMATimg} /> */}
-                    <img className='card-image' src={CMATimg}></img>
-                 </div>
-                 <CourseCard_Labels enabled="true"/>
-                 <div className='course-card-labels-container'>
-                    
-                 </div>
-                    
-                    
-                    <div className='card-body'>
-                        <div className='card-title-desc'>
-                            <CourseCardTitle coursename = 'CAT PREP'></CourseCardTitle>
-                            <CourseCardDescription description='Hello there. This is the best course for CAT. We guarantee a 100%ile in the exam. If you dont get a 100%ile with us then something is wrong with you.'></CourseCardDescription>
-                        </div>
-                        {console.log(this.props)}
-                        
-                        <div className='rating-price-container'>
-                            <CourseCard_Ratings className='rating-component' rating='4.3' numberOfRatings='2541'/>
-                            <CourseCardPrice className='price-component' discount='150' price='4500'></CourseCardPrice>
-                        </div>
-                    </div>
-                        
-                        
-                    
-                </Card>
-                </div>
+            // <Card className='course-card'>
+            //     <div className='card-image-container'>
+            //         <img className='card-image' src={CMATimg}></img>
+            //     </div>
+            //     <CourseCard_Labels enabled="true"/>
+            //     <div className='course-card-labels-container'>
+            //     </div>
+            //     <div className='card-body'>
+            //         <div className='card-title-desc'>
+            //             <CourseCardTitle courseName='CMAT 2021 Crash Course' instituteName='T.I.M.E'></CourseCardTitle>
+            //             <CourseCardDescription description='Hello there. This is the best course for CAT. We guarantee a 100%ile in the exam. If you dont get a 100%ile with us then something is wrong with you.'></CourseCardDescription>
+            //         </div>
+            //         <div className='rating-price-container'>
+            //             <CourseCard_Ratings className='rating-component' rating='4.3' numberOfRatings='2541'/>
+            //             <CourseCardPrice className='price-component' discount='150' price='4500'></CourseCardPrice>
+            //         </div>
+            //     </div>
+            // </Card>
               
+            <div className='card'>
+                <div className='card-image-container'>
+                    <img className='card-image' src={CMATimg}></img>
+                </div>
+                <CourseCard_Labels className='course-card-labels' enabled="true"/>
+                <div className='card-body'>
+                    <div className='card-title-desc'>
+                        <CourseCardTitle courseName='CMAT 2021 Crash Course' instituteName='T.I.M.E'></CourseCardTitle>
+                        <CourseCardDescription description='Hello there. This is the best course for CAT. We guarantee a 100%ile in the exam. If you dont get a 100%ile with us then something is wrong with you.'></CourseCardDescription>
+                    </div>
+                    <div className='rating-price-container'>
+                        <CourseCard_Ratings className='rating-component' rating='4.3' numberOfRatings='2541'/>
+                        <CourseCardPrice className='price-component' discount='300' price='4500'></CourseCardPrice>
+                    </div>
+                </div>
+            </div>
         );
     }
 }
