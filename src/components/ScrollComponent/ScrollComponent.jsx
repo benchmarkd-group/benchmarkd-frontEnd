@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import axios from "axios";
-
+import CardInfo from '../Course_Cards/Cards'
 
 class ScrollComponent extends Component {
   constructor() {
@@ -18,7 +18,7 @@ class ScrollComponent extends Component {
     this.setState({ loading: true });
     axios
       .get(
-        `https://jsonplaceholder.typicode.com/photos?_page=${page}&_limit=10`
+        `http://localhost:3001/courses?_page=${page}&_limit=10`
       )
       .then(res => {
         this.setState({ photos: [...this.state.photos, ...res.data] });
@@ -66,16 +66,16 @@ class ScrollComponent extends Component {
   
       return (
         <div className="container">
-          <div style={{ minHeight: "800px" }}>
+          <div className="containerinside">
             {this.state.photos.map(user => (
-              <img src={user.url} height="100px" width="200px" />
+              <CardInfo className="card"/>
             ))}
           </div>
           <div
             ref={loadingRef => (this.loadingRef = loadingRef)}
             style={loadingCSS}
           >
-            <span style={loadingTextCSS}>Loading...</span>
+            <span style={loadingTextCSS}>Loading with love 😻🙊👻</span>
           </div>
         </div>
       );
