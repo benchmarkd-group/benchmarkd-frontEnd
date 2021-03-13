@@ -1,14 +1,3 @@
-/* .btn-circle.btn-xl {
-    width: 70px;
-    height: 70px;
-    padding: 2px 2px;
-    border-radius: 35px;
-    font-size: 24px;
-    line-height: 1.33;
-}
- */
-
-
 .course-card {
     width: 20vw;
     height: fit-content;
@@ -22,7 +11,7 @@
     flex-direction: column;
     width: 100%;
     height: 100%;
-    padding: 3%;
+    padding: 1%;
     filter: blur(0px);
 }
 
@@ -33,17 +22,17 @@
     margin: 0%;
 }
 
-.card-image-container {
+.card-image-container{
+    width: 100%;
+    height: 50%;
 }
 
 .card-image {
     width: 100%;
     height: 100%;
+    border-radius: 10px 10px 0 0;
 }
 
-/* .course-card-labels-container {  
-    border: double;
-} */
 
 .price-component {
 
@@ -52,20 +41,31 @@
 .rating-component {
 }
 
-/* .btn-circle {
-    width: 25px;
-    height: 25px;
-    padding: 0px 0px;
-    border-radius: 20px;
-    text-align: center;
-    font-size: 12px;
-    line-height: 1.42857;
-} */
-
 .rating-price-container {
     display: flex;
     flex-direction: row;
     width: 100%;
-    height: fit-content;
+    height: 35%;
+    position: relative;
+    bottom: 35%;
+    align-items: center;
 }
 
+.card {
+    /* Add shadows to create the "card" effect */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 10px !important;
+    width: 18rem;
+    height: 22rem;
+  }
+  
+  /* On mouse-over, add a deeper shadow */
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+  
+  /* Add some padding inside the card container */
+  .container {
+    padding: 2px 16px;
+  }

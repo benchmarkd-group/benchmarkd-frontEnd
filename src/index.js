@@ -13,13 +13,15 @@ import CourseCardTitle from './components/Course_Cards/Card_Elements/courseCardT
 
 
 ReactDOM.render(
+
 <div>
  
-  <HorizontalScroll/>,
-  <Card/>,
- </div>,
-  document.getElementById('root')
- 
+ <HorizontalScroll/>,
+ <Card/>,
+</div>,
+ document.getElementById('root')
+
+
 
 );
 

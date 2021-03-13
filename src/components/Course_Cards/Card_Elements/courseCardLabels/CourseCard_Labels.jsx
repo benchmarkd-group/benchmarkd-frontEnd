@@ -15,25 +15,46 @@ class CourseCard_Labels extends Component {
         return(
             <div className='labels-container'>
                <div>
-    <button data-tip data-for="registerTip" type="button" class="btn btn-primary btn-circle"><FontAwesomeIcon icon={faHome} />
+                    <button data-tip data-for="registerTip" type="button" class="btn btn-primary btn-circle"><FontAwesomeIcon icon={faHome} />
                                         </button> 
-
-                              
-      <ReactTooltip id="registerTip" place="top" effect="solid">
-        Visit
-      </ReactTooltip>
-    </div>
-            
-            <button type="button" class="btn btn-primary btn-circle"><FontAwesomeIcon icon={faCamera} />
-                </button> 
-            <button type="button" class="btn btn-primary btn-circle"><FontAwesomeIcon icon={faAddressCard} />
-                </button> 
-            <button type="button" class="btn btn-primary btn-circle"><FontAwesomeIcon icon={faLocationArrow} />
-                </button> 
-            <button type="button" class="btn btn-primary btn-circle"><FontAwesomeIcon icon={faBook} />
-                </button> 
-            {/* <button type="button" class="btn btn-primary btn-circle"><FontAwesomeIcon icon={faBookmark} />
-                </button>  */}
+                    <ReactTooltip id="registerTip" place="top" effect="solid">
+                        Visit
+                    </ReactTooltip>
+                </div>
+                <div>
+                    <button data-tip data-for="registerTip" type="button" class="btn btn-primary btn-circle"><FontAwesomeIcon icon={faCamera} />
+                                        </button> 
+                    <ReactTooltip id="registerTip" place="top" effect="solid">
+                        Visit
+                    </ReactTooltip>
+                </div>
+                <div>
+                    <button data-tip data-for="registerTip" type="button" class="btn btn-primary btn-circle"><FontAwesomeIcon icon={faAddressCard}/>
+                                        </button> 
+                    <ReactTooltip id="registerTip" place="top" effect="solid">
+                        Visit
+                    </ReactTooltip>
+                </div>
+                <div>
+                    <button data-tip data-for="registerTip" type="button" class="btn btn-primary btn-circle"><FontAwesomeIcon icon={faLocationArrow}/>
+                                        </button> 
+                    <ReactTooltip id="registerTip" place="top" effect="solid">
+                        Visit
+                    </ReactTooltip>
+                </div>
+                <div>
+                    <button data-tip data-for="addtionalLabels" type="button" class="btn btn-primary btn-circle"><FontAwesomeIcon icon={faBook}/>
+                                        </button> 
+                    <ReactTooltip id="addtionalLabels" place="top" effect="solid">
+                        <ul>
+                            <li>Label</li>
+                            <li>Label</li>
+                            <li>Label</li>
+                            <li>Label</li>
+                            <li>Label</li>
+                        </ul>
+                    </ReactTooltip>
+                </div>
             </div>     
         );
         

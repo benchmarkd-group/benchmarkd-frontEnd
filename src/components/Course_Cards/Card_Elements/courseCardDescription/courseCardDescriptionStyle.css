@@ -1,4 +1,6 @@
 .course-desc-text {
-    font-size: 0.8rem;
+    font-size: 0.83rem;
     line-height: 1rem;
+    position: relative;
+    bottom: 37%;
 }
