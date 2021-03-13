@@ -13,7 +13,7 @@ import CourseCardTitle from './components/Course_Cards/Card_Elements/courseCardT
 
 
 ReactDOM.render(
-<div>
+<div style={{background: 'black'}}>
  
   <HorizontalScroll/>,
   <Card/>,

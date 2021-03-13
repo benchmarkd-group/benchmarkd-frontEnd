@@ -24,8 +24,9 @@ class Cards extends Component {
     styles = {
         fontSize: 100,
     }
-    render() {
+    render(props) {
         return (
+            <div className='outer'>
              <Card className='course-card'>
 
                  <div className='card-image-container'>
@@ -40,10 +41,10 @@ class Cards extends Component {
                     
                     <div className='card-body'>
                         <div className='card-title-desc'>
-                            <CourseCardTitle></CourseCardTitle>
+                            <CourseCardTitle coursename = 'CAT PREP'></CourseCardTitle>
                             <CourseCardDescription description='Hello there. This is the best course for CAT. We guarantee a 100%ile in the exam. If you dont get a 100%ile with us then something is wrong with you.'></CourseCardDescription>
                         </div>
-                        
+                        {console.log(this.props)}
                         
                         <div className='rating-price-container'>
                             <CourseCard_Ratings className='rating-component' rating='4.3' numberOfRatings='2541'/>
@@ -54,6 +55,7 @@ class Cards extends Component {
                         
                     
                 </Card>
+                </div>
               
         );
     }
