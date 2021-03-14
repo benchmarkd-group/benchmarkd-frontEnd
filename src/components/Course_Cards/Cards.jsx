@@ -47,7 +47,7 @@ class Cards extends Component {
                 <CourseCard_Labels className='course-card-labels' enabled="true"/>
                 <div className='card-body'>
                     <div className='card-title-desc'>
-                        <CourseCardTitle courseName='CMAT 2021 Crash Course' instituteName='T.I.M.E'></CourseCardTitle>
+                        <CourseCardTitle courseName='CMAT 2021 Crash Course ABCDEFGHIJKLMNOP' instituteName='T.I.M.E'></CourseCardTitle>
                         <CourseCardDescription styles={{display:'inline-block'}} description='Hello there. This is the best course for CAT. We guarantee a 100%ile in the exam. If you dont get a 100%ile with us then something is wrong with you.'></CourseCardDescription>
                    </div>
                     <div className='rating-price-container'>
