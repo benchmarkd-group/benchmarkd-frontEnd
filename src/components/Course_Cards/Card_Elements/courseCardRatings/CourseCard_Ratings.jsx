@@ -15,8 +15,8 @@ class CourseCard_Ratings extends Component {
                 </div>
                 <div className='ratings-stars'>
                     <Rating initialRating={this.props.rating} readonly='true'
-                    emptySymbol={<img src={EmptyStar}></img>}
-                    fullSymbol={<img src={FullStar}></img>}
+                    emptySymbol={<img className= 'emptyStar' src={EmptyStar}></img>}
+                    fullSymbol={<img className= 'fullStar' src={FullStar}></img>}
                     ></Rating>
                 </div>
                 <div className='ratings-amount'>

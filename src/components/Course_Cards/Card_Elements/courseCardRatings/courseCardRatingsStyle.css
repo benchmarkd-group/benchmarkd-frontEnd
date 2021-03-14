@@ -5,10 +5,11 @@
     height: fit-content;
     width: fit-content;
     align-self: center;
+    font-size: 1em;
 }
 
 .ratings-number {
-    font-size: 0.8em;
+    font-size: 1em;
     margin-top: 0.4em;
     margin-right: 0.4em;
     color: #ffad62;
@@ -18,6 +19,20 @@
 .ratings-amount {
     margin-top: 0.5em;
     margin-left: 0.4em;
-    font-size: 0.68em;
+    font-size: 0.9em;
     color: gray;
+}
+
+.ratings-stars{
+    font-size: 1em;
+}
+
+.emptyStar{
+    height: 1em !important;
+    width: 1em !important;
+}
+
+.fullStar{
+    height: 1em !important;
+    width: 1em !important;
 }

@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import axios from "axios";
-import CardInfo from '../Course_Cards/Cards'
-
+import CardInfo from '../Course_Cards/Cards';
+import SkeletonComponent from '../SkeletonComponent/SkeletonComponent';
 class ScrollComponent extends Component {
   constructor() {
     super();
@@ -18,7 +18,7 @@ class ScrollComponent extends Component {
     this.setState({ loading: true });
     axios
       .get(
-        `http://localhost:3001/courses?_page=${page}&_limit=10`
+        `http://localhost:3001/courses?_page=${page}&_limit=9`
       )
       .then(res => {
         this.setState({ photos: [...this.state.photos, ...res.data] });
@@ -33,7 +33,7 @@ class ScrollComponent extends Component {
     var options = {
       root: null,
       rootMargin: "0px",
-      threshold: 1.0
+      // threshold: 1.0
     };
     
     this.observer = new IntersectionObserver(
@@ -58,26 +58,33 @@ class ScrollComponent extends Component {
     // Additional css
     const loadingCSS = {
         height: "100px",
-        margin: "30px"
+        margin: "0px"
       };
   
       // To change the loading icon behavior
       const loadingTextCSS = { display: this.state.loading ? "block" : "none" };
   
       return (
+        <p>
         <div className="container">
+          
           <div className="containerinside">
-            {this.state.photos.map(user => (
+           
+           
+            {  this.state.photos.map(user => (
               <CardInfo className="card"/>
             ))}
           </div>
+          
           <div
             ref={loadingRef => (this.loadingRef = loadingRef)}
             style={loadingCSS}
           >
-            <span style={loadingTextCSS}>Loading with love 😻🙊👻</span>
+           <SkeletonComponent style={loadingTextCSS}/>
           </div>
+  
         </div>
+        </p>
       );
   }
 }
