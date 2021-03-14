@@ -13,13 +13,13 @@ import CourseCardTitle from './components/Course_Cards/Card_Elements/courseCardT
 import ScrollComponent from './components/ScrollComponent/ScrollComponent';
 
 ReactDOM.render(
-
 <div>
  
  {/* <HorizontalScroll/>,
  <Card/>, */}
- <HorizontalScroll/>,
- <ScrollComponent/>,
+ <p><HorizontalScroll/></p>
+ <p><ScrollComponent/></p>
+ 
 </div>,
  document.getElementById('root')
 
