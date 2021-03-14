@@ -3,7 +3,7 @@
     flex-direction: column;
     width: 100%;
     height: 100%;
-    padding: 1%;
+    padding: 0%;
     filter: blur(0px);
 }
 
@@ -52,7 +52,8 @@
     border-radius: 10px !important;
     width: 19rem !important;
     height: 25rem !important;
-    margin: 1em !important;
+    margin: 1em;
+    padding: 0% !important;
   }
   
   /* On mouse-over, add a deeper shadow */

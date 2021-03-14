@@ -11,14 +11,18 @@ import CourseCard_Ratings from './components/Course_Cards/Card_Elements/courseCa
 import CourseCardPricing from './components/Course_Cards/Card_Elements/courseCardPricing/courseCardPricing';
 import CourseCardTitle from './components/Course_Cards/Card_Elements/courseCardTitle/courseCardTitle'
 import ScrollComponent from './components/ScrollComponent/ScrollComponent';
+import SearchComponent from './components/SearchComponent/SearchComponent';
+import SkeletonComponent from './components/SkeletonComponent/SkeletonComponent'
 
 ReactDOM.render(
 <div>
  
  {/* <HorizontalScroll/>,
  <Card/>, */}
+
+ <p><SearchComponent/></p>
  <p><HorizontalScroll/></p>
- <p><ScrollComponent/></p>
+ <p style={{display: 'inline-block', verticalAlign: 'right'}}><ScrollComponent/></p>
  
 </div>,
  document.getElementById('root')

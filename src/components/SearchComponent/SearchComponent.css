@@ -1,0 +1,11 @@
+.searchBar{
+
+   width: 75%;
+        border-radius: 25px;
+        color: gray;
+      
+    }
+
+    .searchBarDiv{
+        position: inline-block;
+    }

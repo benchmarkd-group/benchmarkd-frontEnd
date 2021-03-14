@@ -5,6 +5,7 @@
     height: fit-content;
     width: fit-content;
     align-self: center;
+    font-size: 1em;
 }
 
 .ratings-number {
@@ -20,6 +21,10 @@
     margin-left: 0.4em;
     font-size: 0.9em;
     color: gray;
+}
+
+.ratings-stars{
+    font-size: 1em;
 }
 
 .emptyStar{
