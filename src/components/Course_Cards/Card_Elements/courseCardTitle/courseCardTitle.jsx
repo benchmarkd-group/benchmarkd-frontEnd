@@ -8,7 +8,10 @@ class CourseCard_Pricing extends Component {
 
         return (
             <div className='title-container'>
-                <h4 className='course-name'>{this.props.courseName}</h4>
+                <div className='course-name-container'>
+                    <h4 className='course-name'>{this.props.courseName}</h4>
+                </div>
+                
                 <h7 className="institute-name">{this.props.instituteName}</h7>
             </div>
                        
