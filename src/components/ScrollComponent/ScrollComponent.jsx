@@ -18,7 +18,7 @@ class ScrollComponent extends Component {
     this.setState({ loading: true });
     axios
       .get(
-        `http://localhost:3001/courses?_page=${page}&_limit=9`
+        `http://192.168.1.179:3001/courses?_page=${page}&_limit=9`
       )
       .then(res => {
         this.setState({ photos: [...this.state.photos, ...res.data] });

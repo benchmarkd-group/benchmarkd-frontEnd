@@ -47,7 +47,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "json-server": "json-server --watch ./src/jsons/searchpage.json --port 3001"
+    "json-server": "json-server --host 192.168.1.179 --watch ./src/jsons/searchpage.json --port 3001"
   },
   "eslintConfig": {
     "extends": [
