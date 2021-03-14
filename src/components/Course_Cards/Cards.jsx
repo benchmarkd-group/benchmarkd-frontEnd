@@ -4,7 +4,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import CMATimg from '../../../src/images/img.png';
 import response from '../../jsons/searchpage.json';
 import '../Course_Cards/Cards.css';
-import { faHome, faCamera, faAddressCard, faBook, faLocationArrow } from "@fortawesome/free-solid-svg-icons";
+import { faHome, faCamera, faAddressCard, faBook, faLocationArrow, faBookmark } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import ReactStars from "react-rating-stars-component";
 import Card from 'react-bootstrap/Card';
@@ -17,38 +17,33 @@ import CourseCardDescription from './Card_Elements/courseCardDescription/courseC
 
 class Cards extends Component {
 
-    state = {
+    constructor() {
+        super();
+        this.state = {
+          isBookmarked: false
+        };
+      }
 
-    };
+    changeBookmarkedStatus(){
+        this.setState({isBookmarked: !this.state.isBookmarked})
+     }
 
     styles = {
         fontSize: 100,
     }
+
     render(props) {
+
+        var bookmarkClass = this.state.isBookmarked ? "bookmark-btn bookmarked-btn" : "bookmark-btn not-bookmarked-btn";
+
         return (
-            // <Card className='course-card'>
-            //     <div className='card-image-container'>
-            //         <img className='card-image' src={CMATimg}></img>
-            //     </div>
-            //     <CourseCard_Labels enabled="true"/>
-            //     <div className='course-card-labels-container'>
-            //     </div>
-            //     <div className='card-body'>
-            //         <div className='card-title-desc'>
-            //             <CourseCardTitle courseName='CMAT 2021 Crash Course' instituteName='T.I.M.E'></CourseCardTitle>
-            //             <CourseCardDescription description='Hello there. This is the best course for CAT. We guarantee a 100%ile in the exam. If you dont get a 100%ile with us then something is wrong with you.'></CourseCardDescription>
-            //         </div>
-            //         <div className='rating-price-container'>
-            //             <CourseCard_Ratings className='rating-component' rating='4.3' numberOfRatings='2541'/>
-            //             <CourseCardPrice className='price-component' discount='150' price='4500'></CourseCardPrice>
-            //         </div>
-            //     </div>
-            // </Card>
               
             <div className='card'>
                 <div className='card-image-container'>
                     <img className='card-image' src={CMATimg}></img>
                 </div>
+                <button onClick={this.changeBookmarkedStatus.bind(this)} type="button" class={bookmarkClass}><FontAwesomeIcon icon={faBookmark} />
+                                        </button> 
                 <CourseCard_Labels className='course-card-labels' enabled="true"/>
                 <div className='card-body'>
                     <div className='card-title-desc'>
@@ -59,7 +54,6 @@ class Cards extends Component {
                         <CourseCard_Ratings className='rating-component' rating='4.3' numberOfRatings='2541'/>
                         <CourseCardPrice className='price-component' discount='300' price='4500'></CourseCardPrice>
                     </div>
-                    
                 </div>
             </div>
         );

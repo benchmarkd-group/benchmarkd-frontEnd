@@ -13,11 +13,11 @@ class CourseCard_Ratings extends Component {
                 <div className='ratings-number'>
                     <h7>{this.props.rating}</h7>
                 </div>
-                <div className='ratings-stars'>
+                <div className='ratings-stars-container'>
                     <Rating initialRating={this.props.rating} readonly='true'
-                    emptySymbol={<img className= 'emptyStar' src={EmptyStar}></img>}
-                    fullSymbol={<img className= 'fullStar' src={FullStar}></img>}
-                    ></Rating>
+                    emptySymbol={<img src={EmptyStar} className='emptyStar'></img>}
+                    fullSymbol={<img src={FullStar} className='fullStar'></img>}
+                    className='ratings-stars'></Rating>
                 </div>
                 <div className='ratings-amount'>
                     <h10>({this.punctuate_numbers(this.props.numberOfRatings)})</h10>

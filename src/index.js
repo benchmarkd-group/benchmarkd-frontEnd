@@ -15,7 +15,6 @@ import SearchComponent from './components/SearchComponent/SearchComponent';
 import SkeletonComponent from './components/SkeletonComponent/SkeletonComponent'
 
 ReactDOM.render(
-
 <div>
  
  {/* <HorizontalScroll/>,
