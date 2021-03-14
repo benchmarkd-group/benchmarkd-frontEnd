@@ -6,7 +6,7 @@
     width: fit-content;
     height: 2.5em;
     align-self: center;
-    margin-left: 25%;
+    margin-left: 13%;
 }
 
 .discount-disabled {
@@ -14,16 +14,17 @@
 }
 
 .discount-enabled {
-    font-size: 1rem;
+    font-size: 1.2rem;
     color: black;
 }
 
 .normal-price {
+    font-size: 1.2rem;
     color: black;
 }
 
 .discounted-price {
     text-decoration: line-through;
-    font-size: 0.9rem;
+    font-size: 1rem;
     color: gray;
 }
