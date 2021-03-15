@@ -14,6 +14,7 @@ import CourseCard_Ratings from './Card_Elements/courseCardRatings/CourseCard_Rat
 import CourseCardPrice from './Card_Elements/courseCardPricing/courseCardPricing';
 import CourseCardTitle from './Card_Elements/courseCardTitle/courseCardTitle';
 import CourseCardDescription from './Card_Elements/courseCardDescription/courseCardDescription';
+import CourseJson from '../../jsons/searchpage.json';
 
 class Cards extends Component {
 
@@ -33,7 +34,6 @@ class Cards extends Component {
     }
 
     render(props) {
-
         var bookmarkClass = this.state.isBookmarked ? "bookmark-btn bookmarked-btn" : "bookmark-btn not-bookmarked-btn";
 
         return (

@@ -63,7 +63,7 @@
             "sample_resources": "s3_course_id_arn",
             "course_summary": "Prep for CAT summary3"
         },  {
-            "course_name": "Prep for CAT",
+            "course_name": "Prep for CAT3",
             "institute_name": "T.I.M.E",
             "course_id": "101",
             "labels": [
@@ -93,7 +93,7 @@
             "sample_resources": "s3_course_id_arn",
             "course_summary": "Prep for CAT summary4"
         },  {
-            "course_name": "Prep for CAT",
+            "course_name": "Prep for CAT4",
             "institute_name": "T.I.M.E",
             "course_id": "101",
             "labels": [
@@ -123,7 +123,7 @@
             "sample_resources": "s3_course_id_arn",
             "course_summary": "Prep for CAT summary5"
         },  {
-            "course_name": "Prep for CAT",
+            "course_name": "Prep for CAT5",
             "institute_name": "T.I.M.E",
             "course_id": "101",
             "labels": [
@@ -153,7 +153,7 @@
             "sample_resources": "s3_course_id_arn",
             "course_summary": "Prep for CAT summary6"
         },  {
-            "course_name": "Prep for CAT",
+            "course_name": "Prep for CAT6",
             "institute_name": "T.I.M.E",
             "course_id": "101",
             "labels": [
@@ -183,7 +183,7 @@
             "sample_resources": "s3_course_id_arn",
             "course_summary": "Prep for CAT summary"
         },  {
-            "course_name": "Prep for CAT",
+            "course_name": "Prep for CAT7",
             "institute_name": "T.I.M.E",
             "course_id": "101",
             "labels": [
@@ -213,7 +213,7 @@
             "sample_resources": "s3_course_id_arn",
             "course_summary": "Prep for CAT summary"
         },  {
-            "course_name": "Prep for CAT",
+            "course_name": "Prep for CAT8",
             "institute_name": "T.I.M.E",
             "course_id": "101",
             "labels": [
@@ -243,7 +243,7 @@
             "sample_resources": "s3_course_id_arn",
             "course_summary": "Prep for CAT summary"
         },  {
-            "course_name": "Prep for CAT",
+            "course_name": "Prep for CAT9",
             "institute_name": "T.I.M.E",
             "course_id": "101",
             "labels": [
@@ -274,7 +274,7 @@
             "course_summary": "Prep for CAT summary"
         },
         {
-            "course_name": "Prep for CAT",
+            "course_name": "Prep for CAT10",
             "institute_name": "T.I.M.E",
             "course_id": "101",
             "labels": [
@@ -305,7 +305,7 @@
             "course_summary": "Prep for CAT summary11"
         },
         {
-            "course_name": "Prep for CAT",
+            "course_name": "Prep for CAT11",
             "institute_name": "T.I.M.E",
             "course_id": "101",
             "labels": [
@@ -335,7 +335,7 @@
             "sample_resources": "s3_course_id_arn",
             "course_summary": "Prep for CAT summary12"
         },  {
-            "course_name": "Prep for CAT",
+            "course_name": "Prep for CAT12",
             "institute_name": "T.I.M.E",
             "course_id": "101",
             "labels": [
@@ -366,7 +366,7 @@
             "course_summary": "Prep for CAT summary"
         },
         {
-            "course_name": "Prep for CAT",
+            "course_name": "Prep for CAT13",
             "institute_name": "T.I.M.E",
             "course_id": "101",
             "labels": [
@@ -396,7 +396,7 @@
             "sample_resources": "s3_course_id_arn",
             "course_summary": "Prep for CAT summary"
         },  {
-            "course_name": "Prep for CAT",
+            "course_name": "Prep for CAT14",
             "institute_name": "T.I.M.E",
             "course_id": "101",
             "labels": [
@@ -426,7 +426,7 @@
             "sample_resources": "s3_course_id_arn",
             "course_summary": "Prep for CAT summary"
         },  {
-            "course_name": "Prep for CAT",
+            "course_name": "Prep for CAT15",
             "institute_name": "T.I.M.E",
             "course_id": "101",
             "labels": [
@@ -456,7 +456,7 @@
             "sample_resources": "s3_course_id_arn",
             "course_summary": "Prep for CAT summary"
         },  {
-            "course_name": "Prep for CAT",
+            "course_name": "Prep for CAT16",
             "institute_name": "T.I.M.E",
             "course_id": "101",
             "labels": [
@@ -486,7 +486,7 @@
             "sample_resources": "s3_course_id_arn",
             "course_summary": "Prep for CAT summary"
         },  {
-            "course_name": "Prep for CAT",
+            "course_name": "Prep for CAT17",
             "institute_name": "T.I.M.E",
             "course_id": "101",
             "labels": [
@@ -516,7 +516,7 @@
             "sample_resources": "s3_course_id_arn",
             "course_summary": "Prep for CAT summary"
         },  {
-            "course_name": "Prep for CAT",
+            "course_name": "Prep for CAT18",
             "institute_name": "T.I.M.E",
             "course_id": "101",
             "labels": [
@@ -546,7 +546,7 @@
             "sample_resources": "s3_course_id_arn",
             "course_summary": "Prep for CAT summary"
         },  {
-            "course_name": "Prep for CAT",
+            "course_name": "Prep for CAT19",
             "institute_name": "T.I.M.E",
             "course_id": "101",
             "labels": [
@@ -576,7 +576,7 @@
             "sample_resources": "s3_course_id_arn",
             "course_summary": "Prep for CAT summary"
         },  {
-            "course_name": "Prep for CAT",
+            "course_name": "Prep for CAT20",
             "institute_name": "T.I.M.E",
             "course_id": "101",
             "labels": [
@@ -606,7 +606,7 @@
             "sample_resources": "s3_course_id_arn",
             "course_summary": "Prep for CAT summary"
         },  {
-            "course_name": "Prep for CAT",
+            "course_name": "Prep for CAT21",
             "institute_name": "T.I.M.E",
             "course_id": "101",
             "labels": [
@@ -636,7 +636,7 @@
             "sample_resources": "s3_course_id_arn",
             "course_summary": "Prep for CAT summary"
         },  {
-            "course_name": "Prep for CAT",
+            "course_name": "Prep for CAT22",
             "institute_name": "T.I.M.E",
             "course_id": "101",
             "labels": [
@@ -666,7 +666,7 @@
             "sample_resources": "s3_course_id_arn",
             "course_summary": "Prep for CAT summary"
         },  {
-            "course_name": "Prep for CAT",
+            "course_name": "Prep for CAT23",
             "institute_name": "T.I.M.E",
             "course_id": "101",
             "labels": [
@@ -696,7 +696,7 @@
             "sample_resources": "s3_course_id_arn",
             "course_summary": "Prep for CAT summary"
         },  {
-            "course_name": "Prep for CAT",
+            "course_name": "Prep for CAT24",
             "institute_name": "T.I.M.E",
             "course_id": "101",
             "labels": [
@@ -726,7 +726,7 @@
             "sample_resources": "s3_course_id_arn",
             "course_summary": "Prep for CAT summary"
         },  {
-            "course_name": "Prep for CAT",
+            "course_name": "Prep for CAT25",
             "institute_name": "T.I.M.E",
             "course_id": "101",
             "labels": [
@@ -756,7 +756,7 @@
             "sample_resources": "s3_course_id_arn",
             "course_summary": "Prep for CAT summary"
         },  {
-            "course_name": "Prep for CAT",
+            "course_name": "Prep for CAT26",
             "institute_name": "T.I.M.E",
             "course_id": "101",
             "labels": [
@@ -786,7 +786,7 @@
             "sample_resources": "s3_course_id_arn",
             "course_summary": "Prep for CAT summary"
         },  {
-            "course_name": "Prep for CAT",
+            "course_name": "Prep for CAT27",
             "institute_name": "T.I.M.E",
             "course_id": "101",
             "labels": [
@@ -816,7 +816,7 @@
             "sample_resources": "s3_course_id_arn",
             "course_summary": "Prep for CAT summary"
         },  {
-            "course_name": "Prep for CAT",
+            "course_name": "Prep for CAT28",
             "institute_name": "T.I.M.E",
             "course_id": "101",
             "labels": [
@@ -846,7 +846,7 @@
             "sample_resources": "s3_course_id_arn",
             "course_summary": "Prep for CAT summary"
         },  {
-            "course_name": "Prep for CAT",
+            "course_name": "Prep for CAT29",
             "institute_name": "T.I.M.E",
             "course_id": "101",
             "labels": [
@@ -876,7 +876,7 @@
             "sample_resources": "s3_course_id_arn",
             "course_summary": "Prep for CAT summary"
         },  {
-            "course_name": "Prep for CAT",
+            "course_name": "Prep for CAT30",
             "institute_name": "T.I.M.E",
             "course_id": "101",
             "labels": [

@@ -20,8 +20,8 @@ ReactDOM.render(
  {/* <HorizontalScroll/>,
  <Card/>, */}
 
- <p><SearchComponent/></p>
- <p><HorizontalScroll/></p>
+ {/* <p><SearchComponent/></p>
+ <p><HorizontalScroll/></p> */}
  <p style={{display: 'inline-block', verticalAlign: 'right'}}><ScrollComponent/></p>
  
 </div>,
