@@ -15,7 +15,7 @@ class CourseCard_Labels extends Component {
         return(
             <div className='labels-container'>
                <div>
-                    <button data-tip data-for="registerTip" type="button" class="btn btn-primary btn-circle"><FontAwesomeIcon icon={faHome} />
+                    <button data-tip data-for="registerTip" type="button" class="btn-primary btn-circle"><FontAwesomeIcon icon={faHome} />
                                         </button> 
                     <ReactTooltip id="registerTip" place="top" effect="solid">
                         Visit
