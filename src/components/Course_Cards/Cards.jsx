@@ -2,19 +2,14 @@ import React, { Component } from 'react';
 import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import CMATimg from '../../../src/images/img.png';
-import response from '../../jsons/searchpage.json';
 import '../Course_Cards/Cards.css';
-import { faHome, faCamera, faAddressCard, faBook, faLocationArrow, faBookmark } from "@fortawesome/free-solid-svg-icons";
+import { faBookmark } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import ReactStars from "react-rating-stars-component";
-import Card from 'react-bootstrap/Card';
-import Image from 'react-bootstrap/Image';
 import CourseCard_Labels from './Card_Elements/courseCardLabels/CourseCard_Labels';
 import CourseCard_Ratings from './Card_Elements/courseCardRatings/CourseCard_Ratings';
 import CourseCardPrice from './Card_Elements/courseCardPricing/courseCardPricing';
 import CourseCardTitle from './Card_Elements/courseCardTitle/courseCardTitle';
 import CourseCardDescription from './Card_Elements/courseCardDescription/courseCardDescription';
-import CourseJson from '../../jsons/searchpage.json';
 
 class Cards extends Component {
 
@@ -36,6 +31,8 @@ class Cards extends Component {
     render(props) {
         var bookmarkClass = this.state.isBookmarked ? "bookmark-btn bookmarked-btn" : "bookmark-btn not-bookmarked-btn";
 
+        console.log(this.props.courseInfo.course_name)
+
         return (
               
             <div className='card'>
@@ -47,12 +44,12 @@ class Cards extends Component {
                 <CourseCard_Labels className='course-card-labels' enabled="true"/>
                 <div className='card-body'>
                     <div className='card-title-desc'>
-                        <CourseCardTitle courseName='CMAT 2021 Crash Course ABCDEFGHIJKLMNOP' instituteName='T.I.M.E'></CourseCardTitle>
-                        <CourseCardDescription styles={{display:'inline-block'}} description='Hello there. This is the best course for CAT. We guarantee a 100%ile in the exam. If you dont get a 100%ile with us then something is wrong with you.'></CourseCardDescription>
+                        <CourseCardTitle courseName={this.props.courseInfo.course_name} instituteName={this.props.courseInfo.institute_name}></CourseCardTitle>
+                    <CourseCardDescription styles={{display:'inline-block'}} description={this.props.courseInfo.course_summary}></CourseCardDescription>
                    </div>
                     <div className='rating-price-container'>
                         <CourseCard_Ratings className='rating-component' rating='4.3' numberOfRatings='2541'/>
-                        <CourseCardPrice className='price-component' discount='300' price='4500'></CourseCardPrice>
+                        <CourseCardPrice className='price-component' discount='300' price={this.props.courseInfo.cost}></CourseCardPrice>
                     </div>
                 </div>
             </div>

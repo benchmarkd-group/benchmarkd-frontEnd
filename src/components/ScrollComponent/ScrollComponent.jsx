@@ -15,17 +15,22 @@ class ScrollComponent extends Component {
 
 
   getPhotos(page) {
-    this.setState({ loading: true });
+    this.state.loading = true;
     axios
       .get(
         `http://192.168.1.179:3001/courses?_page=${page}&_limit=9`
       )
       .then(res => {
         this.setState({ photos: [...this.state.photos, ...res.data] });
-        this.setState({ loading: false });
+        this.state.loading = false;
+        this.state.page = this.state.page+1;
       });
   }
 
+
+
+
+  
 
   componentDidMount() {
     this.getPhotos(this.state.page);
@@ -49,9 +54,8 @@ class ScrollComponent extends Component {
       const lastPhoto = this.state.photos[this.state.photos.length - 1];
       const curPage = lastPhoto.albumId;
       this.getPhotos(this.state.page);
-      this.setState({ page: this.state.page+1 });
     }
-    this.setState({ prevY: y });
+    this.state.prevY = y;
   }
 
   render() {
@@ -61,6 +65,7 @@ class ScrollComponent extends Component {
         margin: "0px"
       };
   
+     
       // To change the loading icon behavior
       const loadingTextCSS = { display: this.state.loading ? "block" : "none" };
   
@@ -70,11 +75,16 @@ class ScrollComponent extends Component {
           
           <div className="containerinside">
 
-            {console.log(this.state.photos)}
+            {/* {console.log(this.state.photos)} */}
 
-            {  this.state.photos.map(user => (
+            {(this.state.photos.length === 0) ? "": this.state.photos.map(user => (
+              <CardInfo className="card" courseInfo={user}/>
+            )) }
+
+            {/* { 
+            this.state.photos.map(user => (
               <CardInfo className="card"/>
-            ))}
+            ))} */}
           </div>
           
           <div
