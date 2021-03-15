@@ -8,7 +8,7 @@ class ScrollComponent extends Component {
     this.state = {
       photos: [],
       loading: false,
-      page: 0,
+      page: 1,
       prevY: 0
     };
   }
@@ -48,8 +48,8 @@ class ScrollComponent extends Component {
     if (this.state.prevY > y) {
       const lastPhoto = this.state.photos[this.state.photos.length - 1];
       const curPage = lastPhoto.albumId;
-      this.getPhotos(curPage);
-      this.setState({ page: curPage });
+      this.getPhotos(this.state.page);
+      this.setState({ page: this.state.page+1 });
     }
     this.setState({ prevY: y });
   }
@@ -69,8 +69,9 @@ class ScrollComponent extends Component {
         <div className="container">
           
           <div className="containerinside">
-           
-           
+
+            {console.log(this.state.photos)}
+
             {  this.state.photos.map(user => (
               <CardInfo className="card"/>
             ))}
