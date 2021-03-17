@@ -10,6 +10,7 @@ import { faHome, faCamera, faAddressCard, faBook, faLocationArrow } from "@forta
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Card from 'react-bootstrap/Card';
 import CardInfo from '../Course_Cards/Cards'
+import InstituteCard from '../InstituteCards/instituteCard';
 
 class HorizontalScroll extends Component {
   
@@ -23,7 +24,7 @@ class HorizontalScroll extends Component {
                  {response.institutes.forEach((institute)=>{
       itemList.push( 
        
-<CardInfo institute_info = {institute}/>
+<InstituteCard></InstituteCard>
  )})}
 
       <InfiniteCarousel class= 'infinitecarousel'

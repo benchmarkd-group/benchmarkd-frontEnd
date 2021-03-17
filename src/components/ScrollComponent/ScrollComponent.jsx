@@ -6,7 +6,7 @@ class ScrollComponent extends Component {
   constructor() {
     super();
     this.state = {
-      photos: [],
+      courses: [],
       loading: false,
       page: 1,
       prevY: 0
@@ -14,14 +14,14 @@ class ScrollComponent extends Component {
   }
 
 
-  getPhotos(page) {
+  getCourses(page) {
     this.state.loading = true;
     axios
       .get(
         `http://192.168.1.179:3001/courses?_page=${page}&_limit=9`
       )
       .then(res => {
-        this.setState({ photos: [...this.state.photos, ...res.data] });
+        this.setState({ courses: [...this.state.courses, ...res.data] });
         this.state.loading = false;
         this.state.page = this.state.page+1;
       });
@@ -33,7 +33,7 @@ class ScrollComponent extends Component {
   
 
   componentDidMount() {
-    this.getPhotos(this.state.page);
+    this.getCourses(this.state.page);
 
     var options = {
       root: null,
@@ -51,9 +51,9 @@ class ScrollComponent extends Component {
   handleObserver(entities, observer) {
     const y = entities[0].boundingClientRect.y;
     if (this.state.prevY > y) {
-      const lastPhoto = this.state.photos[this.state.photos.length - 1];
-      const curPage = lastPhoto.albumId;
-      this.getPhotos(this.state.page);
+      // const lastPhoto = this.state.courses[this.state.courses.length - 1];
+      // const curPage = lastPhoto.albumId;
+      this.getCourses(this.state.page);
     }
     this.state.prevY = y;
   }
@@ -75,16 +75,9 @@ class ScrollComponent extends Component {
           
           <div className="containerinside">
 
-            {/* {console.log(this.state.photos)} */}
-
-            {(this.state.photos.length === 0) ? "": this.state.photos.map(user => (
-              <CardInfo className="card" courseInfo={user}/>
+            {(this.state.courses.length === 0) ? "": this.state.courses.map(course => (
+              <CardInfo className="card" courseInfo={course}/>
             )) }
-
-            {/* { 
-            this.state.photos.map(user => (
-              <CardInfo className="card"/>
-            ))} */}
           </div>
           
           <div

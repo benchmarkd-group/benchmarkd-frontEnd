@@ -1,0 +1,8 @@
+.institute-card-img {
+    width: 8rem !important;
+    height: 8rem;
+    position: absolute !important;
+    top: 0.9rem !important;
+    left: 4rem;
+    z-index: 50 !important;
+}
