@@ -1,0 +1,74 @@
+.institute_card{
+    display: inline-block ;
+    position: relative;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 10px ;
+    width: 16rem ;
+    height: 20rem ;
+    margin: 1em;
+    padding: 0% ;
+}
+
+.institute_card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+
+.insti-card-img-section {
+    width: 100%;
+    height: 45%;
+    /* border: double; */
+    position: relative;
+}
+
+  .insti-card-img-section-bg  {
+      width: 100%;
+      height: 60%;
+      position: absolute;
+      border-radius: 10px 10px 0px 0px ;
+      background-color: #05b08c;
+  }
+
+.insti-card-name-rating-container {
+    position: absolute;
+    width: 100%;
+    height: 5rem;
+    /* border: double; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.insti-card-exams-section {
+    position: relative;
+    width: 100%;
+    height: 30%;
+    top: 26%;
+    text-align: center;
+}
+
+.insti-card-divider {
+    position: relative !important;
+    top: 24% !important;
+}
+
+.insti-card-exam-title {
+    font-size: 0.9em;
+    font-weight: 700;
+    height: 20%;
+}
+
+.insti-card-exam-labels-outer-container {
+    width: 100%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 0.8rem;
+}
+
+.add-btn {
+    background-color: #1a2544 !important;
+    width: 1.7rem !important;
+}

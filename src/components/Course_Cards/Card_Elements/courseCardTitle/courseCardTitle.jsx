@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import '../courseCardTitle/courseCardTitleStyle.css'
 
 
-class CourseCard_Pricing extends Component {
+class CourseCardTitle extends Component {
 
     render(props) {
 
@@ -12,7 +12,7 @@ class CourseCard_Pricing extends Component {
                     <h4 className='course-name'>{this.props.courseName}</h4>
                 </div>
                 
-                <h7 className="institute-name">{this.props.instituteName}</h7>
+                <h1 className="institute-name">{this.props.instituteName}</h1>
             </div>
                        
         );
@@ -20,4 +20,4 @@ class CourseCard_Pricing extends Component {
 
 }
 
-export default CourseCard_Pricing;
+export default CourseCardTitle;
