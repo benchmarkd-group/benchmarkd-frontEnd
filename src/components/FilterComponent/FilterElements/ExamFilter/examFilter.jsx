@@ -3,7 +3,11 @@ import '../../../FilterComponent/Filter.css'
 
 
 class ExamFilter extends Component {
-    
+  
+    constructor(){
+        super();
+        this.toggleDropdown = this.toggleDropdown.bind(this);
+    }
 //   constructor(){
 //     super();
 //     this.printy = this.printy.bind(this);
@@ -20,10 +24,10 @@ class ExamFilter extends Component {
 // return(<div><button onClick = {this.printy}>CLICK
 //     </button></div>);
 // }
-    toggleDropdown(event){
-        console.log("dsad")
-        let el = event.target;
-        console.log(el)
+    toggleDropdown = () => {
+        console.log("dsad");
+      //  let el = event.target;
+      //  console.log(el)
         // document.getElementsByClassName()
     }
 
@@ -35,7 +39,7 @@ class ExamFilter extends Component {
             <br></br>
                 <span class="exam-name">MBA 
                     <span>
-                        <span class="arrow down" onClick={() => this.toggleDropdown.bind(this)}></span>
+                        <span class="arrow down" onClick={this.toggleDropdown}></span>
                         <span class="arrow up" style = {{display:"none"}}></span>
                     </span>
                     <span class = "exam-background-box">
