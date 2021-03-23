@@ -1,7 +1,61 @@
+.course-desc-text-overflow {
+    font-size: 0.83rem;
+    line-height: 1rem;
+    width: 100%;
+    height: 2.5rem;
+    margin-bottom: 0.5rem;
+    /* position: absolute; */
+    top: 50px;
+    color: white;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    max-height: 2rem;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
 .course-desc-text {
     font-size: 0.83rem;
     line-height: 1rem;
     width: 100%;
-    position: absolute;
+    height: 2.5rem;
+    margin-bottom: 0.5rem;
+    /* position: absolute; */
     top: 50px;
+    color: white;
 }
+
+.view-more-link {
+    font-size: 0.8rem;
+    position: absolute;
+    z-index: 20;
+    bottom: 30%;
+    color: blue;
+}
+
+.desc-container {
+    height: 2.5rem;
+}
+
+.view-more-tooltip {
+    visibility: visible;
+    width: 200px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+  
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+}
+
+.view-more-link:active .view-more-tooltip {
+    font-size: 0.8rem;
+    position: absolute;
+    z-index: 20;
+    bottom: 30%;
+    color: white;
+  }

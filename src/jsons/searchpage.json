@@ -31,11 +31,11 @@
             ],
             "exam_name": "CAT",
             "sample_resources": "s3_course_id_arn",
-            "course_summary": "Prep for CAT summary"
+            "course_summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam commodo lorem sits asdc as asdasca"
         },  {
             "course_name": "Prep for CAT2",
             "institute_name": "T.I.M.E",
-            "course_id": "101",
+            "course_id": "102",
             "labels": [
                 "MBA",
                 "CAT",
@@ -63,9 +63,9 @@
             "sample_resources": "s3_course_id_arn",
             "course_summary": "Prep for CAT summary3"
         },  {
-            "course_name": "Prep for CAT3",
+            "course_name": "Prep for CAT3 asda asdad",
             "institute_name": "T.I.M.E",
-            "course_id": "101",
+            "course_id": "103",
             "labels": [
                 "MBA",
                 "CAT",
@@ -95,7 +95,7 @@
         },  {
             "course_name": "Prep for CAT4",
             "institute_name": "T.I.M.E",
-            "course_id": "101",
+            "course_id": "104",
             "labels": [
                 "MBA",
                 "CAT",
@@ -125,7 +125,7 @@
         },  {
             "course_name": "Prep for CAT5",
             "institute_name": "T.I.M.E",
-            "course_id": "101",
+            "course_id": "105",
             "labels": [
                 "MBA",
                 "CAT",
@@ -151,11 +151,11 @@
             ],
             "exam_name": "CAT",
             "sample_resources": "s3_course_id_arn",
-            "course_summary": "Prep for CAT summary6"
+            "course_summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam commodo lorem sits asdc as asdasca"
         },  {
             "course_name": "Prep for CAT6",
             "institute_name": "T.I.M.E",
-            "course_id": "101",
+            "course_id": "106",
             "labels": [
                 "MBA",
                 "CAT",
@@ -185,7 +185,7 @@
         },  {
             "course_name": "Prep for CAT7",
             "institute_name": "T.I.M.E",
-            "course_id": "101",
+            "course_id": "107",
             "labels": [
                 "MBA",
                 "CAT",
@@ -215,7 +215,7 @@
         },  {
             "course_name": "Prep for CAT8",
             "institute_name": "T.I.M.E",
-            "course_id": "101",
+            "course_id": "108",
             "labels": [
                 "MBA",
                 "CAT",
@@ -245,7 +245,7 @@
         },  {
             "course_name": "Prep for CAT9",
             "institute_name": "T.I.M.E",
-            "course_id": "101",
+            "course_id": "109",
             "labels": [
                 "MBA",
                 "CAT",
@@ -276,7 +276,7 @@
         {
             "course_name": "Prep for CAT10",
             "institute_name": "T.I.M.E",
-            "course_id": "101",
+            "course_id": "110",
             "labels": [
                 "MBA",
                 "CAT",
@@ -307,7 +307,7 @@
         {
             "course_name": "Prep for CAT11",
             "institute_name": "T.I.M.E",
-            "course_id": "101",
+            "course_id": "111",
             "labels": [
                 "MBA",
                 "CAT",
@@ -337,7 +337,7 @@
         },  {
             "course_name": "Prep for CAT12",
             "institute_name": "T.I.M.E",
-            "course_id": "101",
+            "course_id": "112",
             "labels": [
                 "MBA",
                 "CAT",
@@ -368,7 +368,7 @@
         {
             "course_name": "Prep for CAT13",
             "institute_name": "T.I.M.E",
-            "course_id": "101",
+            "course_id": "113",
             "labels": [
                 "MBA",
                 "CAT",
@@ -398,7 +398,7 @@
         },  {
             "course_name": "Prep for CAT14",
             "institute_name": "T.I.M.E",
-            "course_id": "101",
+            "course_id": "114",
             "labels": [
                 "MBA",
                 "CAT",
@@ -428,7 +428,7 @@
         },  {
             "course_name": "Prep for CAT15",
             "institute_name": "T.I.M.E",
-            "course_id": "101",
+            "course_id": "115",
             "labels": [
                 "MBA",
                 "CAT",
@@ -458,7 +458,7 @@
         },  {
             "course_name": "Prep for CAT16",
             "institute_name": "T.I.M.E",
-            "course_id": "101",
+            "course_id": "116",
             "labels": [
                 "MBA",
                 "CAT",
@@ -488,7 +488,7 @@
         },  {
             "course_name": "Prep for CAT17",
             "institute_name": "T.I.M.E",
-            "course_id": "101",
+            "course_id": "117",
             "labels": [
                 "MBA",
                 "CAT",
@@ -518,7 +518,7 @@
         },  {
             "course_name": "Prep for CAT18",
             "institute_name": "T.I.M.E",
-            "course_id": "101",
+            "course_id": "118",
             "labels": [
                 "MBA",
                 "CAT",
@@ -548,7 +548,7 @@
         },  {
             "course_name": "Prep for CAT19",
             "institute_name": "T.I.M.E",
-            "course_id": "101",
+            "course_id": "119",
             "labels": [
                 "MBA",
                 "CAT",
@@ -578,7 +578,7 @@
         },  {
             "course_name": "Prep for CAT20",
             "institute_name": "T.I.M.E",
-            "course_id": "101",
+            "course_id": "120",
             "labels": [
                 "MBA",
                 "CAT",
@@ -608,7 +608,7 @@
         },  {
             "course_name": "Prep for CAT21",
             "institute_name": "T.I.M.E",
-            "course_id": "101",
+            "course_id": "121",
             "labels": [
                 "MBA",
                 "CAT",
@@ -638,7 +638,7 @@
         },  {
             "course_name": "Prep for CAT22",
             "institute_name": "T.I.M.E",
-            "course_id": "101",
+            "course_id": "122",
             "labels": [
                 "MBA",
                 "CAT",
@@ -668,7 +668,7 @@
         },  {
             "course_name": "Prep for CAT23",
             "institute_name": "T.I.M.E",
-            "course_id": "101",
+            "course_id": "123",
             "labels": [
                 "MBA",
                 "CAT",
@@ -698,7 +698,7 @@
         },  {
             "course_name": "Prep for CAT24",
             "institute_name": "T.I.M.E",
-            "course_id": "101",
+            "course_id": "124",
             "labels": [
                 "MBA",
                 "CAT",
@@ -728,7 +728,7 @@
         },  {
             "course_name": "Prep for CAT25",
             "institute_name": "T.I.M.E",
-            "course_id": "101",
+            "course_id": "125",
             "labels": [
                 "MBA",
                 "CAT",
@@ -758,7 +758,7 @@
         },  {
             "course_name": "Prep for CAT26",
             "institute_name": "T.I.M.E",
-            "course_id": "101",
+            "course_id": "126",
             "labels": [
                 "MBA",
                 "CAT",
@@ -788,7 +788,7 @@
         },  {
             "course_name": "Prep for CAT27",
             "institute_name": "T.I.M.E",
-            "course_id": "101",
+            "course_id": "127",
             "labels": [
                 "MBA",
                 "CAT",
@@ -818,7 +818,7 @@
         },  {
             "course_name": "Prep for CAT28",
             "institute_name": "T.I.M.E",
-            "course_id": "101",
+            "course_id": "128",
             "labels": [
                 "MBA",
                 "CAT",
@@ -848,7 +848,7 @@
         },  {
             "course_name": "Prep for CAT29",
             "institute_name": "T.I.M.E",
-            "course_id": "101",
+            "course_id": "129",
             "labels": [
                 "MBA",
                 "CAT",
@@ -878,7 +878,7 @@
         },  {
             "course_name": "Prep for CAT30",
             "institute_name": "T.I.M.E",
-            "course_id": "101",
+            "course_id": "130",
             "labels": [
                 "MBA",
                 "CAT",
@@ -908,7 +908,7 @@
         },  {
             "course_name": "Prep for CAT",
             "institute_name": "T.I.M.E",
-            "course_id": "101",
+            "course_id": "131",
             "labels": [
                 "MBA",
                 "CAT",
@@ -938,7 +938,7 @@
         },  {
             "course_name": "Prep for CAT",
             "institute_name": "T.I.M.E",
-            "course_id": "101",
+            "course_id": "132",
             "labels": [
                 "MBA",
                 "CAT",
@@ -968,7 +968,7 @@
         },  {
             "course_name": "Prep for CAT",
             "institute_name": "T.I.M.E",
-            "course_id": "101",
+            "course_id": "133",
             "labels": [
                 "MBA",
                 "CAT",
@@ -998,7 +998,37 @@
         },  {
             "course_name": "Prep for CAT",
             "institute_name": "T.I.M.E",
-            "course_id": "101",
+            "course_id": "134",
+            "labels": [
+                "MBA",
+                "CAT",
+                "TIME"
+            ],
+            "display_pic": "s3_course_id_arn",
+            "cost": "6500",
+            "reviews": [
+                {
+                    "rating": "4",
+                    "feedback_id": "1",
+                    "review_date": "12/02/2021",
+                    "review_text": "good session",
+                    "reviewer_name": "Anchit"
+                },
+                {
+                    "rating": "3",
+                    "feedback_id": "2",
+                    "review_date": "15/02/2021",
+                    "review_text": "Decent session",
+                    "reviewer_name": "Arnav"
+                }
+            ],
+            "exam_name": "CAT",
+            "sample_resources": "s3_course_id_arn",
+            "course_summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam commodo lorem sits asdc as asdasca"
+        },  {
+            "course_name": "Prep for CAT",
+            "institute_name": "T.I.M.E",
+            "course_id": "135",
             "labels": [
                 "MBA",
                 "CAT",
@@ -1028,7 +1058,7 @@
         },  {
             "course_name": "Prep for CAT",
             "institute_name": "T.I.M.E",
-            "course_id": "101",
+            "course_id": "136",
             "labels": [
                 "MBA",
                 "CAT",
@@ -1058,7 +1088,7 @@
         },  {
             "course_name": "Prep for CAT",
             "institute_name": "T.I.M.E",
-            "course_id": "101",
+            "course_id": "137",
             "labels": [
                 "MBA",
                 "CAT",
@@ -1088,7 +1118,7 @@
         },  {
             "course_name": "Prep for CAT",
             "institute_name": "T.I.M.E",
-            "course_id": "101",
+            "course_id": "138",
             "labels": [
                 "MBA",
                 "CAT",
@@ -1118,7 +1148,7 @@
         },  {
             "course_name": "Prep for CAT",
             "institute_name": "T.I.M.E",
-            "course_id": "101",
+            "course_id": "139",
             "labels": [
                 "MBA",
                 "CAT",
@@ -1148,37 +1178,7 @@
         },  {
             "course_name": "Prep for CAT",
             "institute_name": "T.I.M.E",
-            "course_id": "101",
-            "labels": [
-                "MBA",
-                "CAT",
-                "TIME"
-            ],
-            "display_pic": "s3_course_id_arn",
-            "cost": "6500",
-            "reviews": [
-                {
-                    "rating": "4",
-                    "feedback_id": "1",
-                    "review_date": "12/02/2021",
-                    "review_text": "good session",
-                    "reviewer_name": "Anchit"
-                },
-                {
-                    "rating": "3",
-                    "feedback_id": "2",
-                    "review_date": "15/02/2021",
-                    "review_text": "Decent session",
-                    "reviewer_name": "Arnav"
-                }
-            ],
-            "exam_name": "CAT",
-            "sample_resources": "s3_course_id_arn",
-            "course_summary": "Prep for CAT summary"
-        },  {
-            "course_name": "Prep for CAT",
-            "institute_name": "T.I.M.E",
-            "course_id": "101",
+            "course_id": "140",
             "labels": [
                 "MBA",
                 "CAT",
@@ -1209,7 +1209,7 @@
         {
             "course_name": "Prep for CAT",
             "institute_name": "T.I.M.E",
-            "course_id": "101",
+            "course_id": "141",
             "labels": [
                 "MBA",
                 "CAT",
@@ -1235,7 +1235,7 @@
             ],
             "exam_name": "CAT",
             "sample_resources": "s3_course_id_arn",
-            "course_summary": "Prep for CAT summary454"
+            "course_summary": "Prep for CAT summary"
         }
     ],
     "institutes": [

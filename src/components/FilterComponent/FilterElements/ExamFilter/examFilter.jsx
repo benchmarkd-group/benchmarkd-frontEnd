@@ -30,6 +30,7 @@ class ExamFilter extends Component {
       //  console.log(el)
         // document.getElementsByClassName()
     }
+    // () => this.toggleDropdown.bind(this)
 
     render(props) {
 

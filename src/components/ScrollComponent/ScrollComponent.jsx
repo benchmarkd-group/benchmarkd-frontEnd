@@ -61,7 +61,7 @@ class ScrollComponent extends Component {
   render() {
     // Additional css
     const loadingCSS = {
-        height: "100px",
+        // height: "100px",
         margin: "0px"
       };
   

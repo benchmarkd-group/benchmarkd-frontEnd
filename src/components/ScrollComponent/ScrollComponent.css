@@ -4,3 +4,8 @@
     margin-bottom:0;
     margin-left:auto;
 }
+
+.containerinside {
+    padding: 0% !important;
+    margin: 0% !important;
+}
