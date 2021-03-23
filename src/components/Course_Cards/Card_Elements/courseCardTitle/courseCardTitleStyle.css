@@ -5,7 +5,7 @@
     height: fit-content;
     justify-content: center;
     margin: 0%;
-    position: relative;
+    /* position: relative; */
 }
 
 .course-name-container {
@@ -13,7 +13,7 @@
     display: inline-block;
 }
 
-.course-name {
+.course-name-overflow {
     font-size: 1.3em;
     font-weight: 900;
     margin-bottom: 0%;
@@ -21,6 +21,7 @@
     overflow: hidden;
     text-overflow: ellipsis;
     margin-left: 0px;
+    color: white;
 
     -webkit-transition: 3.3s;
     -moz-transition: 3.3s;
@@ -31,7 +32,18 @@
     transition-timing-function: linear;
 }
 
-.course-name:hover {
+.course-name {
+    font-size: 1.3em;
+    font-weight: 900;
+    margin-bottom: 0%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-left: 0px;
+    color: white;
+}
+
+.course-name-overflow:hover {
     margin-left: -300px;
 }
 
@@ -39,6 +51,7 @@
     font-size: 0.9em;
     font-weight: 700;
     padding: 0.5%;
+    color: white;
 }
 
 /* For Mobile */

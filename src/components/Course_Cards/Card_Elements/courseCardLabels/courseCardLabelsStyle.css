@@ -5,7 +5,7 @@
     flex-direction: row;
     width: fit-content;
     height: fit-content;
-    left: 9.75em;
+    left: 8em;
     bottom: 4%;
 }
 
@@ -22,9 +22,9 @@
     border: coral !important;
 }
 
-.tooltip {
+/* .tooltip {
     visibility: visible;
-}
+} */
 
 .tooltiptext {
     visibility: hidden;

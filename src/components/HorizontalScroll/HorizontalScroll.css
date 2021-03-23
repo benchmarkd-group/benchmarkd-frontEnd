@@ -1,6 +1,6 @@
 
 .menu-item {
-  padding: 0 40px;
+  padding: 0 10px;
   margin: 5px 10px;
   user-select: none;
   /* cursor: pointer; */
@@ -21,7 +21,7 @@
 .horizontalScroll {
     background-color: violet;
     height: 2000px;
-    width: 2000px;
+    width: 100% !important;
 
 }
 
@@ -34,6 +34,6 @@
   }
 
 .infinitecarousel {
-    width: 250px !important;
-    height: 250x !important;
+    width: 60% !important;
+    height: 250px !important;
 }

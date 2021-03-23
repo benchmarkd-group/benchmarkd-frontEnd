@@ -26,6 +26,7 @@ class ExamFilter extends Component {
         console.log(el)
         // document.getElementsByClassName()
     }
+    // () => this.toggleDropdown.bind(this)
 
     render(props) {
 
@@ -35,7 +36,7 @@ class ExamFilter extends Component {
             <br></br>
                 <span class="exam-name">MBA 
                     <span>
-                        <span class="arrow down" onClick={() => this.toggleDropdown.bind(this)}></span>
+                        <span class="arrow down" onClick={window.alert("hello")}></span>
                         <span class="arrow up" style = {{display:"none"}}></span>
                     </span>
                     <span class = "exam-background-box">

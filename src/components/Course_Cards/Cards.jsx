@@ -42,11 +42,12 @@ class Cards extends Component {
                 <button onClick={this.changeBookmarkedStatus.bind(this)} type="button" class={bookmarkClass}><FontAwesomeIcon icon={faBookmark} />
                                         </button> 
                 <CourseCard_Labels className='course-card-labels' enabled="true"/>
+                <div className='bg'></div>
                 <div className='card-body'>
                     <div className='card-title-desc'>
-                        <CourseCardTitle courseName={this.props.courseInfo.course_name} instituteName={this.props.courseInfo.institute_name}></CourseCardTitle>
-                    <CourseCardDescription styles={{display:'inline-block'}} description={this.props.courseInfo.course_summary}></CourseCardDescription>
-                   </div>
+                        <CourseCardTitle courseName={this.props.courseInfo.course_name} courseId={this.props.courseInfo.course_id} instituteName={this.props.courseInfo.institute_name}></CourseCardTitle>
+                        <CourseCardDescription courseId={this.props.courseInfo.course_id} description={this.props.courseInfo.course_summary}></CourseCardDescription>
+                    </div>
                     <div className='rating-price-container'>
                         <CourseCard_Ratings className='rating-component' rating='4.3' numberOfRatings='2541'/>
                         <CourseCardPrice className='price-component' discount='300' price={this.props.courseInfo.cost}></CourseCardPrice>

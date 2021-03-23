@@ -2,20 +2,20 @@
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: 100%;
-    padding: 0%;
-    filter: blur(0px);
+    height: 50%;
+    bottom: 60%;
     position: relative;
 }
 
 .card-title-desc {
     display: flex;
     flex-direction: column;
-    width: 100%;
+    width: 110%;
     height: fit-content;
-    margin: 0%;
-    position: relative;
-    bottom: 30px;
+    margin-left: 0.5rem;
+    align-self: center;
+    /* position: relative; */
+    /* bottom: 30px; */
 }
 
 .card-image-container{
@@ -24,6 +24,7 @@
 }
 
 .card-image {
+    position: relative;
     width: 100%;
     height: 100%;
     border-radius: 10px 10px 0 0;
@@ -40,11 +41,14 @@
 .rating-price-container {
     display: flex;
     flex-direction: row;
-    width: 100%;
+    width: 110%;
     height: 35%;
-    position: absolute;
-    top:60px;
+    /* position: absolute; */
+    /* top:60px; */
     align-items: center;
+    /* border: double; */
+    align-self: center;
+    margin-top: 10PX;
 }
 
 .card {
@@ -53,10 +57,12 @@
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
     border-radius: 10px !important;
-    width: 19rem !important;
-    height: 25rem !important;
-    margin: 1em;
+    width: 17rem !important;
+    height: 22rem !important;
+    margin: 1.8em;
+    margin-bottom: 0% !important;
     padding: 0% !important;
+    background: rgba(0,0,0,0) !important;
   }
   
   /* On mouse-over, add a deeper shadow */
@@ -91,4 +97,15 @@
 
 .not-bookmarked-btn {
     color: white;
+}
+
+.bg {
+    width: 100%;
+    height: 50%;
+    bottom: 8%;
+    position: relative;
+    border-radius: 0px 0px 10px 10px;
+    background-color: rgba(0,0,0,0.5);
+    backdrop-filter: blur(5px);
+    
 }
