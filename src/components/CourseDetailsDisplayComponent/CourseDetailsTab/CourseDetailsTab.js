@@ -24,14 +24,10 @@ class CourseDetailsTab extends Component {
       this.setState({ currentTab });
     }
     handleMouseOver = ()=> {
-        document.getElementById(1).innerText = this.state.data[0].name;
-        document.getElementById(2).innerText = this.state.data[1].name;
-        document.getElementById(3).innerText = this.state.data[2].name;
+        document.getElementById("tabLabelName").className = "tab-name-expanded";
       } 
       handleMouseOut =()=> {
-        document.getElementById(1).innerText = null;
-        document.getElementById(2).innerText = null;
-        document.getElementById(3).innerText = null;
+        document.getElementById("tabLabelName").className = "tab-name-contracted";
       } 
     render() {
       return (
@@ -39,14 +35,18 @@ class CourseDetailsTab extends Component {
   <div>
     
     <div className="tab" onMouseOver={this.handleMouseOver} onMouseOut={this.handleMouseOut}>
-    {this.state.data.map((button, i) => (
-       
-        <button data-tip data-for="registerTip" className="tablinks" id ={button.id} onClick={() => this.handleClick(i)} >
-        <FontAwesomeIcon icon={button.icon} /> </button> 
-      
-    )
+      {this.state.data.map((button, i) => (
+        
+          <button data-tip data-for="registerTip" className="tablinks" id ={button.id} onClick={() => this.handleClick(i)} >
+            <div className='tab-label-container'>
+              <FontAwesomeIcon icon={button.icon} />
+              <span id='tabLabelName' className='tab-name-contracted'>{button.name}</span>
+            </div>
+          </button> 
+        
       )
-    }
+        )
+      }
     </div>
   
     <div className="tabcontent">
