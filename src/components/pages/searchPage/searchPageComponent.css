@@ -5,6 +5,14 @@
     width: 100vw;
 }
 
+.background-image {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: -50;
+    background-image: url('https://globetrender.com/wp-content/uploads/2020/05/Caribbean-beach.jpg');
+}
+
 .title-bar-container {
     width: 100vw;
     height: 7.5vh;
