@@ -7,6 +7,7 @@ class SearchPageComponent extends Component {
     render() {
         return(
             <div className='page-wrapper'>
+                <div className='background-image'></div>
                 <div className="title-bar-container"></div>
                 <div className='page-body-wrapper'>
                     <div className='filter-panel-container'>
