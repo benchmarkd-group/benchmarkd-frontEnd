@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import axios from "axios";
 import CardInfo from '../Course_Cards/Cards';
 import SkeletonComponent from '../SkeletonComponent/SkeletonComponent';
+import {Grid, Rows} from '@material-ui/core';
 class ScrollComponent extends Component {
   constructor() {
     super();
@@ -18,7 +19,7 @@ class ScrollComponent extends Component {
     this.state.loading = true;
     axios
       .get(
-        `http://192.168.1.179:3001/courses?_page=${page}&_limit=9`
+        `http://192.168.29.11:3001/courses?_page=${page}&_limit=9`
       )
       .then(res => {
         this.setState({ courses: [...this.state.courses, ...res.data] });
@@ -70,15 +71,13 @@ class ScrollComponent extends Component {
       const loadingTextCSS = { display: this.state.loading ? "block" : "none" };
   
       return (
-        <p>
-        <div className="container">
-          
-          <div className="containerinside">
-
+        <div>
+          <Grid container >
+            
             {(this.state.courses.length === 0) ? "": this.state.courses.map(course => (
               <CardInfo className="card" courseInfo={course}/>
             )) }
-          </div>
+        </Grid>
           
           <div
             ref={loadingRef => (this.loadingRef = loadingRef)}
@@ -86,9 +85,10 @@ class ScrollComponent extends Component {
           >
            <SkeletonComponent style={loadingTextCSS}/>
           </div>
-  
-        </div>
-        </p>
+          
+          </div>
+
+       
       );
   }
 }

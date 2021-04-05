@@ -50,6 +50,13 @@ class CourseDetailsTab extends Component {
     </div>
   
     <div className="tabcontent">
+      {this.state.currentTab !==1 &&
+        <React.Fragment>
+          <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">Navbar</a>
+          </nav>
+        </React.Fragment>
+      }
       {this.state.currentTab !== -1 &&
         <React.Fragment>
           <h3>{this.state.data[this.state.currentTab].name}</h3>
