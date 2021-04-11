@@ -13,12 +13,12 @@ import CourseCardTitle from './components/Course_Cards/Card_Elements/courseCardT
 import ScrollComponent from './components/ScrollComponent/ScrollComponent';
 import SearchComponent from './components/SearchComponent/SearchComponent';
 import SkeletonComponent from './components/SkeletonComponent/SkeletonComponent';
-import FilterComponent from './components/FilterComponent/Filter'
-import CourseDetailsTab from './components/CourseDetailsDisplayComponent/CourseDetailsTab/CourseDetailsTab'
-
+import FilterComponent from './components/FilterComponent/Filter';
+import CourseDetailsTab from './components/CourseDetailsDisplayComponent/CourseDetailsTab/CourseDetailsTab';
+import SearchPageComponent from './components/pages/searchPage/searchPageComponent';
 ReactDOM.render(
 <div>
-<CourseDetailsTab></CourseDetailsTab>
+<SearchPageComponent></SearchPageComponent>
 
 </div>,
  document.getElementById('root')
