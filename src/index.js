@@ -15,6 +15,7 @@ import SearchComponent from './components/SearchComponent/SearchComponent';
 import SkeletonComponent from './components/SkeletonComponent/SkeletonComponent';
 import FilterComponent from './components/FilterComponent/Filter'
 import CourseDetailsTab from './components/CourseDetailsDisplayComponent/CourseDetailsTab/CourseDetailsTab'
+import SearchPageComponent from './components/pages/searchPage/searchPageComponent';
 
 ReactDOM.render(
 <div>

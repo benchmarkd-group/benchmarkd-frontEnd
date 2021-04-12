@@ -18,8 +18,9 @@ class HorizontalScroll extends Component {
                  </div> */}
                  {response.institutes.forEach((institute)=>{
       itemList.push( 
-       
+ <div className='ml-5'>      
 <InstituteCard></InstituteCard>
+</div>
  )})}
 
       <InfiniteCarousel class= 'infinitecarousel'

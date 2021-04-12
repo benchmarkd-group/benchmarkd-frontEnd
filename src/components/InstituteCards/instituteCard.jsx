@@ -21,7 +21,7 @@ class InstituteCard extends Component {
 
     render() {
         return(
-            <div className='institute_card'>
+            <div className='institute_card ml-5 '>
                 <div className='insti-card-img-section'>
                     <div className='insti-card-img-section-bg'></div>
                     <InstituteCardImage className='insti-card-img'></InstituteCardImage>
