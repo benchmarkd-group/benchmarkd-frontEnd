@@ -23,7 +23,7 @@ class Cards extends Component {
     changeBookmarkedStatus(){
         this.setState({isBookmarked: !this.state.isBookmarked})
      }
-
+""
     styles = {
         fontSize: 100,
     }
@@ -35,7 +35,7 @@ class Cards extends Component {
 
         return (
               
-            <div className='card'>
+            <div className='card ml-5'>
                 <div className='card-image-container'>
                     <img className='card-image' src={CMATimg}></img>
                 </div>
