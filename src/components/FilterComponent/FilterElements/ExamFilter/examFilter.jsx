@@ -1,92 +1,185 @@
 import React, { Component } from 'react';
 import '../../../FilterComponent/Filter.css'
+import '../ExamFilter/examFilter.css'
+import { makeStyles } from '@material-ui/core/styles';
+import List from '@material-ui/core/List';
+import ListItem from '@material-ui/core/ListItem';
+import ListItemText from '@material-ui/core/ListItemText';
+import Divider from '@material-ui/core/Divider';
 
+
+const KeyCodes = {
+    comma: 188,
+    enter: 13,
+  };
+  
+  const delimiters = [KeyCodes.comma, KeyCodes.enter];
 
 class ExamFilter extends Component {
   
-    constructor(){
-        super();
-        this.toggleDropdown = this.toggleDropdown.bind(this);
+    constructor(props){
+        super(props);
+        this.state = {
+            tags: [],
+            appliedTags: [],
+            suggestionVisibility: 'hidden',
+            suggestedTags: [],
+            examList: ['CAT','CMAT','XAT','SNAP','GMAT','CET','NMAT'],
+            applyBtnVisibility: 'hidden',
+            appliedTagsSectionVisibility: 'hidden'
+        };
+        this.handleInput = this.handleInput.bind(this)
+        this.tagInputField = React.createRef()
+        this.handleSuggestionItemClick = this.handleSuggestionItemClick.bind(this)
+        this.handleApplyTagsBtnCLick = this.handleApplyTagsBtnCLick.bind(this)
+        this.removeAppliedTag = this.removeAppliedTag.bind(this)
     }
-//   constructor(){
-//     super();
-//     this.printy = this.printy.bind(this);
 
-// }
+    removeTag = (i) => {
+        if(this.state.tags.length > 0) {
+            const newTags = [ ...this.state.tags ];
+            const suggestionList = this.state.examList;
+            suggestionList.push(newTags[i])
+            this.setState({ examList: suggestionList })
+            newTags.splice(i, 1);
+            this.setState({ tags: newTags }, function () {
+                if(this.state.tags.length === 0){
+                    this.setState({ applyBtnVisibility: 'hidden' })
+                }
+            });
+        }
+      }
+    
+      inputKeyDown = (e) => {
+        const val = e.target.value;
+        if (e.key === 'Enter' && val) {
+          if (this.state.tags.find(tag => tag.toLowerCase() === val.toLowerCase())) {
+            return;
+          }
+          if(this.state.suggestedTags[0] === 'No exams found'){
+              console.log(this.state.suggestedTags[0])
+          }
+        
+        } else if (e.key === 'Backspace' && !val) {
+            this.removeTag(this.state.tags.length - 1);
+        } else if (e.key === 'Backspace' && val.length === 1){
+            this.setState({ suggestionVisibility: 'hidden' })
+        }
+      }
 
-// printy = () => {
-//   this.setState ({count : this.state.count + 1})
-//     console.log(this.state.count);
-//     console.log(this);
-// }
+      handleInput() {
+        var Pattern = new RegExp('^'+this.tagInputField.current.value.toUpperCase()+'.*')
+        if(this.tagInputField.current.value === null || this.tagInputField.current.value === ''){
+            this.setState({ suggestedTags: [] })
+        }
+        else{
+            var filtered = this.state.examList.filter(function (str) { return Pattern.test(str) } )
+            if(filtered.length === 0){
+                this.setState({ suggestedTags: ['No exams found'] })
+            }
+            else{
+                this.setState({ suggestedTags: filtered })
+            }
+            this.setState({ suggestionVisibility: 'visible'})   
+        }
+      }
 
-// render = () =>{
-// return(<div><button onClick = {this.printy}>CLICK
-//     </button></div>);
-// }
-    toggleDropdown = () => {
-        console.log("dsad");
-      //  let el = event.target;
-      //  console.log(el)
-        // document.getElementsByClassName()
-    }
-    // () => this.toggleDropdown.bind(this)
+      handleSuggestionItemClick(tag) {
+        if(!(tag === 'No exams found') ){
+            this.tagInputField.current.value = tag
+            this.setState({ tags: [...this.state.tags, tag]});
+            this.setState({ suggestionVisibility: 'hidden' })
+            const suggestionList = this.state.examList;
+            suggestionList.splice(suggestionList.indexOf(tag), 1)
+            this.setState({ examList: suggestionList })
+            this.tagInputField.current.value = null;
+            this.setState({ applyBtnVisibility: 'visible' })           
+        }
+      }
+
+      handleApplyTagsBtnCLick() {
+          this.setState(state =>{
+            const appliedTags = state.appliedTags.concat(this.state.tags)
+            const tags =[]
+            const suggestionVisibility= 'hidden'
+            const applyBtnVisibility= 'hidden'
+            const appliedTagsSectionVisibility= 'visible'
+            const suggestedTags= []
+            return{
+                appliedTags,
+                tags,
+                suggestionVisibility,
+                applyBtnVisibility,
+                suggestedTags,
+                appliedTagsSectionVisibility
+            }
+          }
+          )
+          
+      }
+
+      removeAppliedTag(i) {
+        const appliedTags = [ ...this.state.appliedTags ]
+        const suggestionList = this.state.examList;
+        suggestionList.push(appliedTags[i])
+        appliedTags.splice(i, 1);
+        if(appliedTags.length === 0){
+            this.setState({ appliedTagsSectionVisibility: 'hidden' })
+        }
+        this.setState({
+            appliedTags: appliedTags,
+            examList: suggestionList
+        })
+      }
 
     render(props) {
 
+        const { tags } = this.state;
+
+
         return(
-            <div>
+            <div classname='exam-filter-container'>
             <span>Exam:</span>
             <br></br>
-                <span class="exam-name">MBA 
-                    <span>
-                        <span class="arrow down" onClick={this.toggleDropdown}></span>
-                        <span class="arrow up" style = {{display:"none"}}></span>
-                    </span>
-                    <span class = "exam-background-box">
-                        <span class="exam-box">CMAT</span>
-                        <span class="exam-box">XAT</span>
-                        <span class="exam-box">CAT</span>
-                        <span class="exam-box">NMAT</span>
-                        <span class="exam-box">GMAT</span>
-                        <span class="exam-box">SNAP</span>
-                    </span>
-                </span>
 
-                <span class="exam-name">Medical 
-                    <span>
-                        <span class="arrow down" style = {{display:"none"}} onClick={() => this.toggleDropdown.bind(this)}></span>
-                        <span class="arrow up" ></span>
-                    </span>
-                    <span class = "exam-background-box" style = {{display:"none"}}>
-                        <span class="exam-box">CMAT</span>
-                        <span class="exam-box">XAT</span>
-                        <span class="exam-box">CAT</span>
-                        <span class="exam-box">NMAT</span>
-                        <span class="exam-box">GMAT</span>
-                        <span class="exam-box">SNAP</span>
-                    </span>
-                </span>
-                
-                <span class="exam-name">Engineering 
-                    <span>
-                        <span class="arrow down" style = {{display:"none"}} onClick={() => this.toggleDropdown.bind(this)}></span>
-                        <span class="arrow up" ></span>
-                    </span>
-                    <span class = "exam-background-box" style = {{display:"none"}}>
-                        <span class="exam-box">CMAT</span>
-                        <span class="exam-box">XAT</span>
-                        <span class="exam-box">CAT</span>
-                        <span class="exam-box">NMAT</span>
-                        <span class="exam-box">GMAT</span>
-                        <span class="exam-box">SNAP</span>
-                    </span>
-                </span>
-
+            <div className="input-tag">
+                <ul className="input-tag__tags">
+                    { tags.map((tag, i) => (
+                        <li classname='selected-exam-tags' key={tag}>
+                            {tag}
+                            <button classname='tag-cross-button' type="button" onClick={() => { this.removeTag(i); }}>+</button>
+                        </li>
+                    ))}
+                    <li className="input-tag__tags__input">
+                        <div className='tags-input-with-button-container'>
+                        <input type="text" ref={this.tagInputField} placeholder='Enter an exam' onInput={this.handleInput} onKeyDown={this.inputKeyDown}/>
+                        <button style={{ visibility: this.state.applyBtnVisibility }} onClick={this.handleApplyTagsBtnCLick}>APPLY</button>
+                        </div>
+                    </li>
+                    
+                </ul>
             </div>
-            //   <div>
-            //     <p>{this.props.description}</p>
-            //   </div>
+            <div style={{visibility: this.state.suggestionVisibility}} className='suggestion-items-container'>
+                <List component="nav" className='suggestion-list'>
+                    {this.state.suggestedTags.map((tag,i) => (
+                            <ListItem button divider>
+                                <ListItemText primary={tag} onClick={() => this.handleSuggestionItemClick(tag)} />
+                            </ListItem>
+                        ))}
+                </List>
+            </div>
+            <span style={{ visibility: this.state.appliedTagsSectionVisibility }}>Currently displaying for:</span>
+            <div className="applied-tag" style={{ visibility: this.state.appliedTagsSectionVisibility }}>
+                <ul className="applied-tag__tags">
+                    { this.state.appliedTags.map((tag, i) => (
+                        <li classname='applied-exam-tags' key={tag}>
+                            {tag}
+                            <button classname='tag-cross-button' type="button" onClick={() => { this.removeAppliedTag(i); }}>+</button>
+                        </li>
+                    ))}
+                </ul>
+            </div>
+            </div>
         );
         
     }
