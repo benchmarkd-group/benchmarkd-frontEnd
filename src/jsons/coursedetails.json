@@ -1,0 +1,16 @@
+{
+    "carddetails":
+    [
+        {
+        
+            "Onlinelectures" : "true",
+            "Offlinelectures" : "true",
+            "StudyMaterials" : "true",
+            "MockTests" : "true",
+            "Mentoring" : "true",
+            "StudyMaterials" : "false",
+            "MockTests" : "false",
+            "Mentoring" : "false"
+        }
+    ]
+}
