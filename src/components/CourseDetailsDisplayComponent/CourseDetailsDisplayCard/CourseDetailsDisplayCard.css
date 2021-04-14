@@ -1,0 +1,85 @@
+
+.card {
+
+    border-radius: 10px !important;
+    width: 21rem !important;
+    height: 31rem !important;
+    background: rgba(0,0,0,0) !important;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+
+  .bg {
+    border-radius: 0px 0px 10px 10px;
+    background-color: rgba(0,0,0,0.5);
+    backdrop-filter: blur(5px);
+    position: relative;
+   top:0;
+   height: 18rem;
+   
+    }
+
+.card-image {
+    padding: 0,0,0,0;
+    margin: 0,0,0,0;
+}
+
+.card-image-container {
+    height: 13rem;
+}
+
+.div1 {
+   display: flex;
+   flex-direction: row;
+}
+ 
+.btn-left {
+    display: inline-block !important;
+    margin: 3rem;
+   height: 2rem !important;
+   width: 2rem !important;box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+   
+}
+
+.btn-div {
+    display: inline-block !important;
+    padding-top: 1rem !important;
+    padding-bottom: 0.5rem !important;
+    width: 10rem;
+}
+
+.btn-right {
+    display: inline-block !important;
+ margin-top: 3rem;
+    height: 2rem !important;
+    width: 2rem !important;
+    
+}
+
+ul {
+    columns:  2 !important;
+    -webkit-columns: 2;
+    -moz-columns: 2;
+    list-style-position: inside !important;
+  }
+
+  li{
+
+    float:left;
+   margin:0 10px 10px 0;
+}
+
+.textbox {
+  padding-top: 0.5rem;
+    padding: 0.5rem;
+    color: beige;
+}
+
+.disabled-button{
+    opacity: 0.4;
+    pointer-events: none;
+}
+
+.pricetag {
+    float: right;
+}
