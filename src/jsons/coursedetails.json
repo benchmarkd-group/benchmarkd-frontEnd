@@ -3,7 +3,7 @@
     [
         {
         
-            "Onlinelectures" : "true",
+            "Onlinelectures" : "false",
             "Offlinelectures" : "true",
             "StudyMaterials" : "true",
             "MockTests" : "true",
