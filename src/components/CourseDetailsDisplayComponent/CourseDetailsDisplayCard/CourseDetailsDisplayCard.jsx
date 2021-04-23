@@ -15,6 +15,7 @@ import '../../../components/CourseDetailsDisplayComponent/CourseDetailsDisplayCa
 import { faAddressCard} from "@fortawesome/free-solid-svg-icons";
 import pricetag from '../../../images/price.svg'
 import coursedetailsinfor from '../../../jsons/coursedetails.json'
+
 class Cards extends Component {
 
     constructor() {
