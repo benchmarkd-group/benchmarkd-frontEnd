@@ -16,10 +16,12 @@ import SkeletonComponent from './components/SkeletonComponent/SkeletonComponent'
 import FilterComponent from './components/FilterComponent/Filter';
 import CourseDetailsTab from './components/CourseDetailsDisplayComponent/CourseDetailsTab/CourseDetailsTab';
 import SearchPageComponent from './components/pages/searchPage/searchPageComponent';
-import CourseDetailsDisplayCard from './components/CourseDetailsDisplayComponent/CourseDetailsDisplayCard/CourseDetailsDisplayCard'
+import CourseDetailsDisplayCard from './components/CourseDetailsDisplayComponent/CourseDetailsDisplayCard/CourseDetailsDisplayCard';
+import SampleResources from '../src/components/CourseDetailsDisplayComponent/SampleResources/sampleResources'
+
 ReactDOM.render(
 <div>
-<CourseDetailsDisplayCard></CourseDetailsDisplayCard>
+<SampleResources></SampleResources>
 
 </div>,
  document.getElementById('root')
