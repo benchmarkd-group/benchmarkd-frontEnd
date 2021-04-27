@@ -2,28 +2,31 @@
     font-family: sans-serif;
     font-size: 17px;
   } */
-
-  body {
-    background: #f2f2f2;
-    padding: 20px;
-  }
   
-  .input-tag {
-    background: white;
-    border: 1px solid #d6d6d6;
+  .inputTag {
+    border: 2px solid #d6d6d6;
     border-radius: 2px;
     display: flex;
     flex-wrap: wrap;
+    width: auto;
     padding: 5px 5px 0;
   }
   
-  .input-tag input {
+  .inputTag input {
     border: none;
     width: 100%;
     outline: none;
+    color: white;
+    font-weight: 1000;
+    background: rgba(0,0,0,0);
+  }
+
+  .inputTag input::placeholder {
+    color: white;
+    font-weight: 500 !important;
   }
   
-  .input-tag__tags {
+  .inputTag__tags {
     display: inline-flex;
     flex-wrap: wrap;
     margin: 0;
@@ -31,7 +34,7 @@
     width: 100%;
   }
   
-  .input-tag__tags li {
+  .inputTag__tags li {
     align-items: center;
     background: gray;
     border-radius: 50px;
@@ -45,16 +48,16 @@
     padding: 2px 5px;
   }
   
-  .input-tag__tags li button {
+  .inputTag__tags li button {
     align-items: center;
     appearance: none;
-    background: #333333;
+    background: gray;
     border: none;
     border-radius: 50%;
     color: white;
     cursor: pointer;
     display: inline-flex;
-    font-size: 12px;
+    font-size: 20px;
     height: 15px;
     justify-content: center;
     line-height: 0;
@@ -64,7 +67,7 @@
     width: 15px;
   }
 
-  .input-tag__tags__input button {
+  .inputTag__tags__input button {
     align-items: center;
     appearance: none;
     background: coral !important;
@@ -73,7 +76,7 @@
     color: white;
     cursor: pointer;
     display: inline-flex;
-    font-size: 12px;
+    font-size: 12px !important;
     height: 20px !important;
     justify-content: center;
     line-height: 0;
@@ -83,36 +86,35 @@
     width: fit-content !important;
   }
   
-  .input-tag__tags li.input-tag__tags__input {
+  .inputTag__tags li.inputTag__tags__input {
     background: none;
     flex-grow: 1;
     padding: 0;
   }
 
-  .suggestion-items-container {
+  /* .suggestionItemsContainer {
       width: 100%;
       border: thin;
       border-width: 1px;
       padding: 5px;
       text-align: left;
       z-index: 999;
-  }
+  } */
 
-  .tags-input-with-button-container {
+  .tagsInputWithButtonContainer {
       display: flex;
       flex-direction: row;
   }
 
-  .applied-tag {
-    background: white;
-    border: 1px solid #d6d6d6;
+  .appliedTag {
+    /* border: 1px solid #d6d6d6; */
     border-radius: 2px;
     display: flex;
     flex-wrap: wrap;
     padding: 5px 5px 0;
   }
 
-  .applied-tag__tags {
+  .appliedTag__tags {
     display: inline-flex;
     flex-wrap: wrap;
     margin: 0;
@@ -120,7 +122,7 @@
     width: 100%;
   }
 
-  .applied-tag__tags li {
+  .appliedTag__tags li {
     align-items: center;
     background: coral;
     border-radius: 50px;
@@ -134,16 +136,16 @@
     padding: 2px 5px;
   }
   
-  .applied-tag__tags li button {
+  .appliedTag__tags li button {
     align-items: center;
     appearance: none;
-    background: #333333;
+    background: coral;
     border: none;
     border-radius: 50%;
     color: white;
     cursor: pointer;
     display: inline-flex;
-    font-size: 12px;
+    font-size: 20px;
     height: 15px;
     justify-content: center;
     line-height: 0;
@@ -151,4 +153,8 @@
     padding: 0;
     transform: rotate(45deg);
     width: 15px;
+  }
+
+  .appliedTag__sectionHeader {
+    margin-top: 10px !important;
   }

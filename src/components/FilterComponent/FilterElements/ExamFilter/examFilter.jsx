@@ -1,19 +1,15 @@
 import React, { Component } from 'react';
-import '../../../FilterComponent/Filter.css'
-import '../ExamFilter/examFilter.css'
+import ExamFilterStyle from '../ExamFilter/examFilter.module.css'
 import { makeStyles } from '@material-ui/core/styles';
 import List from '@material-ui/core/List';
 import ListItem from '@material-ui/core/ListItem';
 import ListItemText from '@material-ui/core/ListItemText';
-import Divider from '@material-ui/core/Divider';
 
 
 const KeyCodes = {
     comma: 188,
     enter: 13,
   };
-  
-  const delimiters = [KeyCodes.comma, KeyCodes.enter];
 
 class ExamFilter extends Component {
   
@@ -22,9 +18,9 @@ class ExamFilter extends Component {
         this.state = {
             tags: [],
             appliedTags: [],
-            suggestionVisibility: 'hidden',
+            suggestionVisibility: 'none',
             suggestedTags: [],
-            examList: ['CAT','CMAT','XAT','SNAP','GMAT','CET','NMAT'],
+            examList: ['CAT','CMAT','XAT','SNAP','GMAT','CET','NMAT','CLAT','CNAT'],
             applyBtnVisibility: 'hidden',
             appliedTagsSectionVisibility: 'hidden'
         };
@@ -63,7 +59,7 @@ class ExamFilter extends Component {
         } else if (e.key === 'Backspace' && !val) {
             this.removeTag(this.state.tags.length - 1);
         } else if (e.key === 'Backspace' && val.length === 1){
-            this.setState({ suggestionVisibility: 'hidden' })
+            this.setState({ suggestionVisibility: 'none' })
         }
       }
 
@@ -78,9 +74,10 @@ class ExamFilter extends Component {
                 this.setState({ suggestedTags: ['No exams found'] })
             }
             else{
+                filtered.sort()
                 this.setState({ suggestedTags: filtered })
             }
-            this.setState({ suggestionVisibility: 'visible'})   
+            this.setState({ suggestionVisibility: ''})   
         }
       }
 
@@ -88,7 +85,7 @@ class ExamFilter extends Component {
         if(!(tag === 'No exams found') ){
             this.tagInputField.current.value = tag
             this.setState({ tags: [...this.state.tags, tag]});
-            this.setState({ suggestionVisibility: 'hidden' })
+            this.setState({ suggestionVisibility: 'none' })
             const suggestionList = this.state.examList;
             suggestionList.splice(suggestionList.indexOf(tag), 1)
             this.setState({ examList: suggestionList })
@@ -101,7 +98,7 @@ class ExamFilter extends Component {
           this.setState(state =>{
             const appliedTags = state.appliedTags.concat(this.state.tags)
             const tags =[]
-            const suggestionVisibility= 'hidden'
+            const suggestionVisibility= 'none'
             const applyBtnVisibility= 'hidden'
             const appliedTagsSectionVisibility= 'visible'
             const suggestedTags= []
@@ -121,6 +118,7 @@ class ExamFilter extends Component {
       removeAppliedTag(i) {
         const appliedTags = [ ...this.state.appliedTags ]
         const suggestionList = this.state.examList;
+        this.tagInputField.current.value = null;
         suggestionList.push(appliedTags[i])
         appliedTags.splice(i, 1);
         if(appliedTags.length === 0){
@@ -128,7 +126,8 @@ class ExamFilter extends Component {
         }
         this.setState({
             appliedTags: appliedTags,
-            examList: suggestionList
+            examList: suggestionList,
+            suggestionVisibility: 'none'
         })
       }
 
@@ -136,49 +135,50 @@ class ExamFilter extends Component {
 
         const { tags } = this.state;
 
-
         return(
             <div classname='exam-filter-container'>
-            <span>Exam:</span>
-            <br></br>
 
-            <div className="input-tag">
-                <ul className="input-tag__tags">
-                    { tags.map((tag, i) => (
-                        <li classname='selected-exam-tags' key={tag}>
-                            {tag}
-                            <button classname='tag-cross-button' type="button" onClick={() => { this.removeTag(i); }}>+</button>
-                        </li>
-                    ))}
-                    <li className="input-tag__tags__input">
-                        <div className='tags-input-with-button-container'>
-                        <input type="text" ref={this.tagInputField} placeholder='Enter an exam' onInput={this.handleInput} onKeyDown={this.inputKeyDown}/>
-                        <button style={{ visibility: this.state.applyBtnVisibility }} onClick={this.handleApplyTagsBtnCLick}>APPLY</button>
+                <div className={ExamFilterStyle.inputTag}>
+                            <ul className={ExamFilterStyle.inputTag__tags}>
+                                { tags.map((tag, i) => (
+                                    <li classname='selected-exam-tags' key={tag}>
+                                        {tag}
+                                        <button classname='tag-cross-button' type="button" onClick={() => { this.removeTag(i); }}>+</button>
+                                    </li>
+                                ))}
+                                <li className={ExamFilterStyle.inputTag__tags__input}>
+                                    <div className={ExamFilterStyle.tagsInputWithButtonContainer}>
+                                    <input type="text" ref={this.tagInputField} placeholder='Enter an exam' onInput={this.handleInput} onKeyDown={this.inputKeyDown}/>
+                                    <button style={{ visibility: this.state.applyBtnVisibility }} onClick={this.handleApplyTagsBtnCLick}>APPLY</button>
+                                    </div>
+                                </li>
+                                
+                            </ul>
                         </div>
-                    </li>
-                    
-                </ul>
-            </div>
-            <div style={{visibility: this.state.suggestionVisibility}} className='suggestion-items-container'>
-                <List component="nav" className='suggestion-list'>
-                    {this.state.suggestedTags.map((tag,i) => (
-                            <ListItem button divider>
-                                <ListItemText primary={tag} onClick={() => this.handleSuggestionItemClick(tag)} />
-                            </ListItem>
-                        ))}
-                </List>
-            </div>
-            <span style={{ visibility: this.state.appliedTagsSectionVisibility }}>Currently displaying for:</span>
-            <div className="applied-tag" style={{ visibility: this.state.appliedTagsSectionVisibility }}>
-                <ul className="applied-tag__tags">
-                    { this.state.appliedTags.map((tag, i) => (
-                        <li classname='applied-exam-tags' key={tag}>
-                            {tag}
-                            <button classname='tag-cross-button' type="button" onClick={() => { this.removeAppliedTag(i); }}>+</button>
-                        </li>
-                    ))}
-                </ul>
-            </div>
+                        <div style={{display: this.state.suggestionVisibility, maxHeight: 150, overflow:'auto', border:'1px solid #d6d6d6', marginBottom: 10}} className={ExamFilterStyle.suggestionItemsContainer}>
+                            <List component="nav" className='suggestion-list'>
+                                {this.state.suggestedTags.map((tag,i) => (
+                                        <ListItem button divider>
+                                            <ListItemText primary={tag} style={{ color:'white' }} onClick={() => this.handleSuggestionItemClick(tag)} />
+                                        </ListItem>
+                                    ))}
+                            </List>
+                        </div>
+                        <div className={ExamFilterStyle.appliedTag__sectionHeader} style={{ visibility: this.state.appliedTagsSectionVisibility }}>
+                            <span style={{ color:'white' }}>Currently displaying for:</span>
+                            <div className={ExamFilterStyle.appliedTag}>
+                                <ul className={ExamFilterStyle.appliedTag__tags}>
+                                    { this.state.appliedTags.map((tag, i) => (
+                                        <li classname='applied-exam-tags' key={tag}>
+                                            {tag}
+                                            <button classname='tag-cross-button' type="button" onClick={() => { this.removeAppliedTag(i); }}>+</button>
+                                        </li>
+                                    ))}
+                                </ul>
+                            </div>    
+                        </div>
+                        
+            
             </div>
         );
         

@@ -1,0 +1,19 @@
+.ratingsFilterItemsContainer {
+    cursor: pointer;
+}
+
+.ratingsFilterItemsContainer:hover .ratingsFilterItemsText{
+    color: teal;
+}
+
+.ratingsFilterItemsText {
+    margin-left: 10px;
+    color: white;
+    font-weight: 500;
+}
+
+.ratingsFilterItemsTextActive {
+    margin-left: 10px;
+    color: teal;
+    font-weight: 500;
+}
