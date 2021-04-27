@@ -14,16 +14,35 @@ import courseDetailsObject from "../../../jsons/coursedetails.json";
 import '../../../components/CourseDetailsDisplayComponent/CourseDetailsDisplayCard/CourseDetailsDisplayCard.css';
 import { faAddressCard} from "@fortawesome/free-solid-svg-icons";
 import pricetag from '../../../images/price.svg'
+import coursedetailsinfor from '../../../jsons/coursedetails.json'
 
 class Cards extends Component {
 
     constructor() {
         super();
+        this.state = {
+            applyOpacity: '50%'
+         };
+ 
       }
 
     styles = {
         fontSize: 100,
     }
+
+    
+  componentDidMount = () => {
+    if(coursedetailsinfor.carddetails[0].Onlinelectures == "true")
+    {
+        this.setState({ applyOpacity: '100%'})  
+    }
+    else
+    if(coursedetailsinfor.carddetails[0].Onlinelectures == "false")
+    {
+        this.setState({ applyOpacity: '50%'})  
+    }
+}
+
 
     render(props) {
 
@@ -41,8 +60,8 @@ class Cards extends Component {
                 <img className='pricetag' src={pricetag}></img>
                     <div className="div1">
                     <li className = "btn-div">
-                <button type="button" class="btn btn-left btn-primary btn-circle"><FontAwesomeIcon icon={faAddressCard}/>
-                                        </button> <text className="textbox">Lectures</text></li>
+                    <button type="button" class="btn btn-left btn-primary btn-circle" style={{opacity: this.state.applyOpacity}}><FontAwesomeIcon icon={faAddressCard}/>
+                                        </button>  <text className="textbox">Lectures</text></li>
                                         <li className = "btn-div">
                 <button type="button" class="btn btn-left btn-primary btn-circle"><FontAwesomeIcon icon={faAddressCard}/>
                                         </button><text className="textbox">Resources</text> </li>

@@ -3,7 +3,7 @@
     [
         {
         
-            "Onlinelectures" : "true",
+            "Onlinelectures" : "false",
             "Offlinelectures" : "true",
             "StudyMaterials" : "true",
             "MockTests" : "true",
@@ -11,6 +11,14 @@
             "StudyMaterials" : "false",
             "MockTests" : "false",
             "Mentoring" : "false"
+        }
+    ],
+    "sampleresources": [
+        {
+            "video1" : "http://techslides.com/demos/sample-videos/small.mp4",
+            "video2" : "http://techslides.com/demos/sample-videos/small.mp4",
+            "files" : ["url1", "url2", "url3"]
+
         }
     ]
 }
