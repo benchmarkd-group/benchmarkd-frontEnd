@@ -1,0 +1,33 @@
+.priceListItemContainer {
+    display: flex;
+    flex-direction: row;
+}
+
+.applyBtn {
+    margin-top: 10px !important;
+}
+
+.applyBtnActive {
+    background-color: coral !important;
+}
+
+.applyBtnDisabled {
+    background-color: gray !important;
+}
+
+.minPriceInputField {
+
+}
+
+.rangeSlider {
+    width: 90% !important;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.histogramContainer {
+    position: relative;
+    padding: 0px 10px 0px 10px;
+    top: 20px;
+}
+

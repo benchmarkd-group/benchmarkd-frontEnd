@@ -1,33 +1,59 @@
 import React, { Component } from 'react';
-import '../../../FilterComponent/Filter.css'
+import List from '@material-ui/core/List';
+import ListItem from '@material-ui/core/ListItem';
+import ListItemText from '@material-ui/core/ListItemText';
+import Checkbox from '@material-ui/core/Checkbox'
+import FeatureFilterStyles from './featuresFilter.module.css'
+// import '../../../FilterComponent/Filter.module.css'
 
 class FeaturesFilter extends Component {
+
+    constructor() {
+        super()
+        this.state= {
+            featureList: ['Live Lectures','Videos','Study Material','Mock Tests','1-on-1 Mentorship'],
+            appliedFeaturesList: []
+        }
+        this.handleSuggestionItemClick = this.handleSuggestionItemClick.bind(this)
+    }
+
+    handleSuggestionItemClick(feature){
+        if(this.state.appliedFeaturesList.includes(feature)){
+            const list = this.state.appliedFeaturesList,
+            i=list.indexOf(feature)
+            list.splice(i,1)
+            this.setState({ appliedFeaturesList:list }
+            )
+        }
+        else{
+            this.setState(state =>{
+                const appliedFeaturesList = state.appliedFeaturesList.concat(feature)
+                return{
+                    appliedFeaturesList
+                }
+            }
+            )
+        }
+        
+        
+    }
 
     render(props) {
 
         return(
             <div>
-                <span>Features:</span>
-                <br></br>
-                    <label>
-                        <input type="checkbox"></input> Live Lectures
-                    </label>
-                    <label>
-                        <input type="checkbox"></input> Videos
-                    </label>
-                    <label>
-                        <input type="checkbox"></input> Study Material
-                    </label>
-                    <label>
-                        <input type="checkbox"></input> Mock Tests
-                    </label>
-                    <label>
-                        <input type="checkbox"></input> 1-on-1 Mentor
-                    </label>
+                    <List component="nav" className='suggestion-list'>
+                                {this.state.featureList.map((feature,i) => (
+                                        <ListItem divider>
+                                            <div className={FeatureFilterStyles.featuresListItemContainer}>
+                                                <Checkbox style={{ color: 'white' }} inputProps={{ 'aria-label': 'uncontrolled-checkbox' }} onClick={() => this.handleSuggestionItemClick(feature)}/>
+                                                <ListItemText primary={feature} style={{ marginTop:'10px' ,color:'white' }}  />
+                                            </div>
+                                            
+                                        </ListItem>
+                                    ))}
+                    </List>
             </div>
-            //   <div>
-            //     <p>{this.props.description}</p>
-            //   </div>
         );
         
     }
