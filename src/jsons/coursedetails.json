@@ -1,6 +1,6 @@
 {
     "carddetails":
-    [
+    
         {
         
             "Onlinelectures" : "false",
@@ -12,13 +12,22 @@
             "MockTests" : "false",
             "Mentoring" : "false"
         }
-    ],
-    "sampleresources": [
+    ,
+    "sampleresources": 
         {
             "video1" : "http://techslides.com/demos/sample-videos/small.mp4",
-            "video2" : "http://techslides.com/demos/sample-videos/small.mp4",
-            "files" : ["url1", "url2", "url3"]
+            "video2" : "false",
+            "files" : [ { "sampleResFileName" : "Analytics",
+                     "sampleResFileURL" : "Quants_exercise_questions.pdf"}, 
+                 {"sampleResFileName" : "Analytics",
+                    "sampleResFileURL" : "Quants_exercise_questions.pdf" }, 
+                {"sampleResFileName" : "Analytics",
+                    "sampleResFileURL" : "Quants_exercise_questions.pdf" },
+                    {"sampleResFileName" : "Analytics",
+                        "sampleResFileURL" : "Quants_exercise_questions.pdf" }
+              
+            ]
 
         }
-    ]
+    
 }
