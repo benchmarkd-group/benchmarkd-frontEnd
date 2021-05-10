@@ -46,8 +46,8 @@ class FeaturesFilter extends Component {
                                 {this.state.featureList.map((feature,i) => (
                                         <ListItem divider>
                                             <div className={FeatureFilterStyles.featuresListItemContainer}>
-                                                <ListItemText primary={feature} style={{ color:'white' }}  />
                                                 <Checkbox style={{ color: 'white' }} inputProps={{ 'aria-label': 'uncontrolled-checkbox' }} onClick={() => this.handleSuggestionItemClick(feature)}/>
+                                                <ListItemText primary={feature} style={{ marginTop:'10px' ,color:'white' }}  />
                                             </div>
                                             
                                         </ListItem>
