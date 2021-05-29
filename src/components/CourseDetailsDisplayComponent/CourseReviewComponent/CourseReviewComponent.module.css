@@ -1,0 +1,37 @@
+.container {
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+}
+
+.pictureLikesContainer {
+    width: fit-content;
+    align-items: center;
+    padding: 10px;
+}
+
+.nameRatingReviewContainer {
+    width: 100%;
+    padding: 10px;
+    color: white;
+}
+
+.picture {
+    margin: auto;
+}
+
+.ratingTimeContainer {
+    display: flex;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.rating {
+    padding-right: 10px;
+}
+
+.userNameDiv {
+    font-weight: 700;
+    font-size: 1.2rem;
+}
