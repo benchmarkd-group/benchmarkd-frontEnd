@@ -1,8 +1,17 @@
 {
+    "courseName": "XAT 2021 crash course",
+    "instiName": "T.I.M.E",
+    "courseSummary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus dui eros, hendrerit non nulla et, volutpat volutpat erat. Integer id arcu ut tortor viverra aliquam. Suspendisse maximus magna consectetur volutpat.",
+    "courseDesc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla at maximus mauris. Etiam ultricies porttitor velit, quis imperdiet risus consequat vitae. Quisque a mauris velit. Aenean sit amet felis augue. Aliquam et ex erat. Donec lacinia vestibulum sollicitudin. Proin tortor justo, ultrices a efficitur id, vulputate et orci. Sed placerat vitae diam at maximus. Sed nec dictum nisi.Mauris efficitur et mauris sed fringilla. In faucibus libero id mollis condimentum. In ultrices lectus non ante sagittis, sit amet varius urna vulputate. Sed aliquam placerat lacus. Nam sagittis accumsan nulla nec scelerisque. Vivamus in eros mauris. Ut et enim ultrices, convallis odio vitae, facilisis tortor. Vestibulum at quam gravida, aliquam neque quis, porttitor quam. Curabitur eu accumsan tellus. Nullam bibendum, quam semper volutpat finibus, quam lorem ullamcorper libero, sit amet ullamcorper massa ex sed lectus. Duis et odio quam.",
+    "courseMockTests":{
+        "fullLengthTests": "25",
+        "sectionalTests": "75"
+    },
+    "includedItems":["item1","item2","item5"],
+    "courseSchedule": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus dui eros, hendrerit non nulla et, volutpat volutpat erat. Integer id arcu ut tortor viverra aliquam. Suspendisse maximus magna consectetur volutpat.",
+    "courseAchievements": ["pic_url1", "pic_url2", "pic_url3", "pic_url4"],
     "carddetails":
-    
         {
-        
             "Onlinelectures" : "false",
             "Offlinelectures" : "true",
             "StudyMaterials" : "true",
@@ -28,6 +37,31 @@
               
             ]
 
+        },
+    "reviews": [
+        {
+            "userName": "Anchit Basu",
+            "userRating": "4",
+            "reviewDate": "20/5/2021",
+            "reviewContent": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam in molestie libero, eget congue quam. Aliquam diam augue, eleifend id ex vitae, molestie tincidunt libero. Phasellus commodo lacus nec mollis volutpat. Sed nec tristique massa. Nulla non ipsum id tortor gravida placerat eu et nulla. Curabitur convallis nulla eu dolor tristique, lacinia accumsan eros pellentesque. Duis et ultrices velit. Phasellus ex neque, condimentum vitae mi eget, porta laoreet odio. Vestibulum fermentum tellus lacus, a dictum eros laoreet quis. Sed mattis luctus nibh vitae pulvinar. Nam tincidunt dolor quis nisl pharetra, quis feugiat odio efficitur. Ut commodo efficitur ligula quis cursus."    
+        },
+        {
+            "userName": "Sneha Nair",
+            "userRating": "3.5",
+            "reviewDate": "21/5/2021",
+            "reviewContent": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam in molestie libero, eget congue quam. Aliquam diam augue, eleifend id ex vitae, molestie tincidunt libero. Phasellus commodo lacus nec mollis volutpat. Sed nec tristique massa. Nulla non ipsum id tortor gravida placerat eu et nulla. Curabitur convallis nulla eu dolor tristique, lacinia accumsan eros pellentesque. Duis et ultrices velit. Phasellus ex neque, condimentum vitae mi eget, porta laoreet odio. Vestibulum fermentum tellus lacus, a dictum eros laoreet quis. Sed mattis luctus nibh vitae pulvinar. Nam tincidunt dolor quis nisl pharetra, quis feugiat odio efficitur. Ut commodo efficitur ligula quis cursus."    
         }
+    ],
+    "ratings": {
+        "overallRating": "3.5",
+        "totalNumberOfRatings": "7983",
+        "ratingsDistribution": {
+            "oneStar":"350",
+            "twoStar":"258",
+            "threeStar":"1200",
+            "fourStar":"3486",
+            "fiveStar":"2689"
+        }
+    }
     
 }

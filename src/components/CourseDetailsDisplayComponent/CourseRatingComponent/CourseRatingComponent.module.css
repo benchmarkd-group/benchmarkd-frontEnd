@@ -1,0 +1,82 @@
+.rootContainer {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: fit-content;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+    align-content: center;
+}
+
+.ratingContainer {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    height: 100%;
+    align-items: center;
+}
+
+.ratingDistributionContainer {
+    width: fit-content;
+    height: 100%;
+    padding-left: 40px;
+    padding-top: 20px;
+}
+
+.overallRatingValueContainer {
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    color: white;
+}
+
+.actualRatingValueContainer {
+    position: relative;
+    top: 18px;
+    width: fit-content;
+    font-size: 4rem;
+    font-weight: 750;
+}
+
+.outOfRatingValueContainer {
+    font-weight: 700;
+}
+
+.ratingStarsContainer {
+    font-size: 1.3rem;
+    padding-bottom: 10px;
+}
+
+.numberOfRatingsContainer {
+    font-size: 0.9em;
+    color: white;
+}
+
+.starDistributionContainer {
+    height: 30px;
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    color: white;
+}
+
+.distributionBar {
+    width: 275px;
+    height: 1em;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.25);
+}
+
+.distributionStarIcon {
+    margin-left: 5px;
+    margin-right: 10px;
+}
+
+.distributionNumberOfRatings {
+    padding-left: 10px;
+    color: white;
+}
